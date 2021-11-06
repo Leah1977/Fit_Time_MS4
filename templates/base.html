@@ -48,9 +48,9 @@
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                 <form method="GET" action="">
                     <div class="input-group w-100">
-                        <input type="text" class="form-control border border-black rounded-0" name="q" placeholder="Search">
+                        <input type="text" class="form-control border border-black rounded-2" name="q" placeholder="Search">
                         <div class="input-group-append">
-                            <button class="form-control btn btn-black border border-black rounded-0" type="submit">
+                            <button class="form-control btn btn-black border border-black rounded-1" type="submit">
                                 <span class="icon">
                                     <i class="fas fa-search"></i>
                                 </span>
@@ -98,6 +98,16 @@
                     </li>
                 </ul>
             </div>
+            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0"></div>
+        </div>
+        <div class="row bg-white">
+            <nav class="navbar navbar-expand-lg navbar-light w-100">
+                <button class="navbar-toggler" type="button" data-toggle="collaspe" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                {% include 'includes/mobile-top-header.html %}
+                {% include 'includes/main-nav.html %}
+            </nav>
         </div>
     </header>
         
