@@ -23,6 +23,8 @@ body {
 
 .logo-font {
     text-transform: uppercase;
+    text-shadow: 5px 5px #222;
+
 }
 
 .main-logo-link {
@@ -55,6 +57,7 @@ body {
     background: #222;
     color: white; 
 }
+
 
 /* ---------------------------------- Media Queries */
 
