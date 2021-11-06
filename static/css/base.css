@@ -1,0 +1,45 @@
+html {
+    height: 100%;
+}
+
+body {
+    background: url('/media/homepage_background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: calc(100vh - 164px);
+    color: #555;
+    font-family: 'Oswald'; 
+}
+
+/* from Bulma */
+
+.icon {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.logo-font {
+    text-transform: uppercase;
+}
+
+.main-logo-link {
+    width: fit-content;
+}
+
+.border-black {
+    border: 2px solid black !important;
+}
+
+.join-now-button {
+    background: #555;
+    color: #fafafa;
+    min-width: 240px;
+    letter-spacing: 1.5px;
+    border-radius: 22px;
+}
+
+.join-now-button: hover,
+.join-now-button: active,
+.join-now-button: focus,
