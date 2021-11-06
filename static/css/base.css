@@ -58,6 +58,10 @@ body {
     color: white; 
 }
 
+.nav-item {
+    margin: 10px;
+}
+
 
 /* ---------------------------------- Media Queries */
 
