@@ -7,6 +7,7 @@
                 <p class="my-0">Search</p>
             </div>
         </a>
+        <!-- dropdown for search menu -->
         <div class="dropdown-menu border-0 w-100
         p-3 rounded-0 my-0" aria-labelledby="mobile-search">
             <form class="form" method="GET" action="">
@@ -30,6 +31,7 @@
                 <p class="my-0">My Account</p>
             </div>
         </a>
+        <!-- dropdown for Account details -->
         <div class="dropdown-menu border-0" aria-labelledby="user-options">
             {% if request.user.is_authenticated %}
                 {% if request.user.is_superuser %}
@@ -43,6 +45,7 @@
             {% endif %} 
         </div>
     </li>
+    <!-- Access to the shopping bag -->
     <li class="list-inline-item">
         <a href="" class="{% if grand_total %} text-info font-weight-bold{% else %} text-black{% endif %} nav-link d-block d-lg-none">
             <div class="text-center">

@@ -24,7 +24,6 @@ body {
 .logo-font {
     text-transform: uppercase;
     text-shadow: 5px 5px #222;
-
 }
 
 .main-logo-link {
@@ -35,17 +34,21 @@ body {
     border: 2px solid black !important;
 }
 
-.join-now-button {
-    background: #555;
-    color: #fafafa;
-    min-width: 240px;
-    letter-spacing: 1.5px;
-    border-radius: 22px;
+.text-black {
+    color: #000 !important;
 }
 
 .btn-black {
     background: black;
     color: #fafafa;
+}
+
+.join-now-button {
+    background: #555;
+    color: #fafafa;
+    min-width: 140px;
+    letter-spacing: 1.5px;
+    border-radius: 22px;
 }
 
 .join-now-button:hover,
@@ -62,6 +65,9 @@ body {
     margin: 10px;
 }
 
+.bg-black {
+    background: #000 !important;
+}
 
 /* ---------------------------------- Media Queries */
 
@@ -86,3 +92,4 @@ body {
         padding-top: 164px;
     }
 }
+
