@@ -69,6 +69,18 @@ body {
     background: #000 !important;
 }
 
+/* overlay to cover background image */
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: blue;
+    z-index: -1;
+}
+
 /* ---------------------------------- Media Queries */
 
 /* For screens with extra large screens */
