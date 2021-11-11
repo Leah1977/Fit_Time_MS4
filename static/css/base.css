@@ -105,3 +105,25 @@ body {
     }
 }
 
+/* padding for mobile to push images below navbar */
+
+@media (max-width: 991px) {
+    .header-container {
+        padding-top: 116px;
+    }
+
+    body {
+        height: calc(100vh - 116px);
+    }
+}
+
+@media (max-width: 812px) {
+    .header-container {
+        padding-top: 216px;
+    }
+
+    body {
+        height: calc(100vh - 216px);
+    }
+
+}
