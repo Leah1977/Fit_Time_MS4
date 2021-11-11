@@ -5,9 +5,9 @@
             All Products
             </a>
             <div class="dropdown-menu border-1" aria-labelledby="all-products-link">
-                <a class="dropdown-item" href="#">By Price</a>
-                <a class="dropdown-item" href="#">By Rating</a>
-                <a class="dropdown-item" href="#">By Category</a>
+                <a class="dropdown-item" href="{% url 'products' %}?category=by_price">By Price</a>
+                <a class="dropdown-item" href="{% url 'products' %}?category=by_rating">By Rating</a>
+                <a class="dropdown-item" href="{% url 'products' %}?category=by_category">By Category</a>
                 <a class="dropdown-item" href="{% url 'products' %}">All Products</a>
             </div>
         </li>
@@ -17,22 +17,22 @@
             Classes
             </a>
             <div class="dropdown-menu border-1" aria-labelledby="classes-link">
-                <a class="dropdown-item" href="#">Beginners</a>
-                <a class="dropdown-item" href="#">Intermediate</a>
-                <a class="dropdown-item" href="#">Advanced</a>
-                <a class="dropdown-item" href="#">All Classes</a>
+                <a class="dropdown-item" href="{% url 'products' %}?category=beginners">Beginners</a>
+                <a class="dropdown-item" href="{% url 'products' %}?category=intermediate">Intermediate</a>
+                <a class="dropdown-item" href="{% url 'products' %}?category=advanced">Advanced</a>
+                <a class="dropdown-item" href="{% url 'products' %}?category=beginners,intermediate,advanced">All Classes</a>
             </div>
         </li>
         <!-- menu for Nutrition -->
         <li class="nav-item dropdown">
-            <a class="btn btn-outline-dark dropdown-toggle" type="button" id="classes-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="btn btn-outline-dark dropown-toggle" type="button" id="classes-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Nutrition
             </a>
             <div class="dropdown-menu border-1" aria-labelledby="classes-link">
-                <a class="dropdown-item" href="#">Snacks</a>
-                <a class="dropdown-item" href="#">Drinks</a>
-                <a class="dropdown-item" href="#">Mains</a>
-                <a class="dropdown-item" href="#">All Nutrition</a>
+                <a class="dropdown-item" href="{% url 'products' %}?category=snacks">Snacks</a>
+                <a class="dropdown-item" href="{% url 'products' %}?category=drinks">Drinks</a>
+                <a class="dropdown-item" href="{% url 'products' %}?category=mains">Mains</a>
+                <a class="dropdown-item" href="{% url 'products' %}?category=snacks,drinks,mains">All Nutrition</a>
             </div>
         </li>
         <!-- menu for Shop -->
@@ -41,10 +41,10 @@
             Clothing
             </a>
             <div class="dropdown-menu border-1" aria-labelledby="classes-link">
-                <a class="dropdown-item" href="#">Runners</a>
-                <a class="dropdown-item" href="#">Tops</a>
-                <a class="dropdown-item" href="#">Sports Equipment</a>
-                <a class="dropdown-item" href="{% url 'products' %}">All Products</a>
+                <a class="dropdown-item" href="{% url 'products' %}?category=runners">Runners</a>
+                <a class="dropdown-item" href="{% url 'products' %}?category=tops">Tops</a>
+                <a class="dropdown-item" href="{% url 'products' %}?category=sports_equipment">Sports Equipment</a>
+                <a class="dropdown-item" href="{% url 'products' %}?category=runners,tops,equipment">All Products</a>
             </div>
         </li>
         <!-- menu for Special Offers  -->
@@ -53,10 +53,10 @@
             Special Offers
             </a>
             <div class="dropdown-menu border-1" aria-labelledby="special-offers-link">
-                <a class="dropdown-item" href="#">Top Offers</a>
-                <a class="dropdown-item" href="#">Sale</a>
-                <a class="dropdown-item" href="#">What's New</a>
-                <a class="dropdown-item" href="#">All Offers</a>
+                <a class="dropdown-item" href="{% url 'products' %}?category=top_offers">Top Offers</a>
+                <a class="dropdown-item" href="{% url 'products' %}?category=sale">Sale</a>
+                <a class="dropdown-item" href="{% url 'products' %}?category=what&s_new">What's New</a>
+                <a class="dropdown-item" href="{% url 'products' %}?category=top_offers,sale,what&s_new">All Offers</a>
             </div>
         </li>
     </ul>
