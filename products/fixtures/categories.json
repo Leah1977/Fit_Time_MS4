@@ -1,0 +1,38 @@
+[{
+	"model": "products.category",
+	"pk": 1,
+	"fields": {
+		"name": "all_products",
+		"friendly_name": "All Products"
+	}
+}, {
+	"model": "products.category",
+	"pk": 2,
+	"fields": {
+		"name": "classes",
+		"friendly_name": "Classes"
+	}
+}, {
+	"model": "products.category",
+	"pk": 3,
+	"fields": {
+		"name": "nutrition",
+		"friendly_name": "Nutrition"
+	}
+}, {
+	"model": "products.category",
+	"pk": 4,
+	"fields": {
+		"name": "shop",
+		"friendly_name": "Shop"
+	}
+},  {
+	"model": "products.category",
+	"pk": 5,
+	"fields": {
+		"name": "special_offers",
+		"friendly_name": "Special Offers"
+	}
+}
+
+]

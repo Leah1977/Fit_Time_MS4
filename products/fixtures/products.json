@@ -1,0 +1,27 @@
+  [{
+	"model": "products.product",
+	"pk": 1,
+	"fields": {
+		"category": 4,
+		"sku": "43029750",
+		"name": "Grey Hoodie",
+		"description": "A grey hoodie.  100% recycled.",
+		"price": "12.99",
+		"rating": "0.03",
+		"image_url": "https://images.unsplash.com/photo-1590879812269-5257236e753e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+		"image": "grey_hoodie_Cs0Wk1Z.jpg"
+	}
+}, {
+	"model": "products.product",
+	"pk": 2,
+	"fields": {
+		"category": 2,
+		"sku": "56138956",
+		"name": "Beginners Class",
+		"description": "This class is 1 hour long and suitable for all levels.\r\nWe will combine a mixture of strength training and cardio.\r\nNo equipment necessary",
+		"price": "10.02",
+		"rating": "5.00",
+		"image_url": "https://www.canva.com/photos/MADer4r2pnU-pilates-class/",
+		"image": "Untitled_design_4.png"
+	}
+}]
