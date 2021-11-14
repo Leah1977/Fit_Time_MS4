@@ -10,6 +10,7 @@
 {% endblock %}
 
 {% block content %}
+<!-- cover up the background image -->
 <div class="overlay"></div>
     <div class="container-fluid">
         <div class="row">
@@ -56,6 +57,7 @@
                 <div class="row">
                     {% for product in products %}
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                            <!-- code for card from bootstrap -->
                             <div class="card h-100 border-0">
                                     {% if product.image %}
                                     <a href="{% url 'product_detail' product.id %}">
