@@ -115,6 +115,12 @@
                 {% include 'includes/main_nav.html' %}
             </nav>
         </div>
+        <!-- delivery banner -->
+        <div id="delivery-banner" class="row text-center">
+            <div class="col bg-black text-white">
+                <h4 class="logo-font my-1">Free delivery on orders over €{{ free_delivery_threshold }}</h4>
+            </div>
+        </div>
     </header>
         
     {% if messages %}
