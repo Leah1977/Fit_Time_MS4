@@ -77,7 +77,7 @@ body {
     top: 0;
     left: 0;
     position: fixed;
-    background: blue;
+    background: rgb(35 57 165 / 90%);
     z-index: -1;
 }
 
