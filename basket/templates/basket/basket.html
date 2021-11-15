@@ -23,17 +23,18 @@
             <div class="col">
                 {% if basket_items %}
                     <div class="table-responsive rounded"></div>
-                {& else &}
+                {% else %}
                 <p class = "lead mb-5">Nothing in this basket yet!!!</p>
                 <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
                     <span class="icon">
-                        <i class="fas fa-chevron-left">Back to Shop</i>
+                        <i class="fas fa-chevron-left"></i>
                     </span>
                     <span class="text-uppercase">Return to Shop</span>
                 </a>
                 {% endif %}
-                <img src=" {{ product.img }} " alt=" {{ product.name }}">
             </div>
+        </div>
+        <div>
             <div class="col">
                 <h1>{{ product.name }}</h1>
                 <h3>{{ product.details }}</h3>        
