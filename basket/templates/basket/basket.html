@@ -24,7 +24,7 @@
                 {% if basket_items %}
                     <div class="table-responsive rounded">
                         <table class="table table-sm table-border">
-                            <thead class="class-white">
+                            <thead class="text-white">
                                 <tr>
                                     <th scope="col">Product Details</th>
                                     <th scope="col"></th>
@@ -35,11 +35,12 @@
                             </thead>
                             {% for item in basket_items %}
                                 <tr>
-                                    <td class="p-3 w-30">
+                                    <td class="p-3 w-25">
                                         <img src="{{ item.product.image.url }}" alt="{{ item.product.details }}" class="img-fluid rounded">
                                     </td>
                                     <td class="py-3">
                                         <p class="my-0">{{ item.product.name }}</p>
+                                        <p class="my-0">Size: {% if item.product.has_sizes %}{{ item.size|upper }}{% else %}N/A{% endif %}</p>
                                         <p class="my-0 small text-muted">SKU: {{ item.product.sku | upper }}</p>
                                     </td>
                                     <td class="py-3">
