@@ -47,7 +47,7 @@
                     <p class="mt-3">{{ product.description }}</p>
                     <!-- form to add a product to the shopping bag -->
                     <!-- form from bootstrap and changed to suit -->
-                    <form class="form" action="{% url 'add_to_bag' product.id %}" method="POST">
+                    <form class="form" action="{% url 'add_to_basket' product.id %}" method="POST">
                         {% csrf_token %}
                         <div class="form-group row">
                             <div class="col-6">

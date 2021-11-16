@@ -4,7 +4,7 @@ from django.conf import settings
 
 def basket_contents(request):
 
-    bag_items = []
+    basket_items = []
     total = 0
     product_count = 0
 
@@ -18,7 +18,7 @@ def basket_contents(request):
     grand_total = delivery + total
 
     context = {
-        'bag_items': bag_items,
+        'basket_items': basket_items,
         'total': total,
         'product_count': product_count,
         'delivery': delivery,
