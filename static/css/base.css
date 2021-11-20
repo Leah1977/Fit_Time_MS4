@@ -148,3 +148,26 @@ a.category-badge > span.badge:hover {
     }
 
 }
+
+/* padding for mobile to push images above footer */
+
+@media (max-width: 991px) {
+    .footer-container {
+        padding-top: 116px;
+    }
+
+    body {
+        height: calc(100vh - 116px);
+    }
+}
+
+@media (max-width: 812px) {
+    .footer-container {
+        padding-top: 216px;
+    }
+
+    body {
+        height: calc(100vh - 216px);
+    }
+
+}

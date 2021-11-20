@@ -1,4 +1,5 @@
-[{
+[   
+	{
 	"model": "products.category",
 	"pk": 1,
 	"fields": {
