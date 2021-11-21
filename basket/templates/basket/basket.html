@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
-{% load bag_tools %}
+{% load basket_tools %}
 
 {% block page_header %}
     <div class="container header-container">
@@ -10,7 +10,7 @@
     </div>
 {% endblock %}
 
-{% block content%}
+{% block content %}
     <div class="overlay"></div>
     <div class="container mb-2">
         <div class="row">
@@ -127,7 +127,7 @@
 
 {% block postloadjs %}
 {{ block.super }}
-{% include 'products/includes/quantity_input_script.html %}
+{% include 'products/includes/quantity_input_script.html' %}
 
 <script type="text/javascript">
     // update product amount on click
