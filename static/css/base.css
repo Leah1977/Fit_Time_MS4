@@ -115,6 +115,10 @@ a.category-badge > span.badge:hover {
 
 /* ---------------------------------- Footer */
 
+.footer-container {
+    position: sticky;
+    top: 100vh;
+}
 
 
 /* ---------------------------------- Media Queries */
