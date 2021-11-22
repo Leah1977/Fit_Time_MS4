@@ -35,7 +35,8 @@ def add_to_basket(request, item_id):
 
         else:
             basket[item_id] = {'items_by_size': {size: quantity}}
-            messages.success(request, f'Added size {size.upper()} {product.name} to your basket')
+            messages.success(
+                request, f'Added size {size.upper()} {product.name} to your basket')
 
     else:
         if item_id in list(basket.keys()):
@@ -52,7 +53,7 @@ def add_to_basket(request, item_id):
 
 def adjust_basket(request, item_id):
     """ Adjust the quantity of the specified product to the basket """
-    
+
     product = get_object_or_404(Product, pk=item_id)
     quantity = int(request.POST.get('quantity'))
     size = None
@@ -64,7 +65,7 @@ def adjust_basket(request, item_id):
         if quantity > 0:
             basket[item_id]['items_by_size'][size] = quantity
             messages.success(request, f'Updated size {size.upper()} {product.name} quantity to {basket[item_id]["items_by_size"][size]}')
-     
+
         else:
             del basket[item_id]['items_by_size'][size]
             if not basket[item_id]['items_by_size']:
@@ -78,7 +79,6 @@ def adjust_basket(request, item_id):
         else:
             basket.pop(item_id)
             messages.success(request, f'Removed {product.name} from your basket')
-
 
     request.session['basket'] = basket
     return redirect(reverse('view_basket'))
@@ -98,15 +98,15 @@ def remove_from_basket(request, item_id):
             del basket[item_id]['items_by_size'][size]
             if not basket[item_id]['items_by_size']:
                 basket.pop(item_id)
-            messages.success(request, f'Removed size {size.upper()} {Product.name} from your basket')
+            messages.success(request, f'Removed size {size.upper()} {product.name} from your basket')
 
         else:
             basket.pop(item_id)
-            messages.success(request, f'Removed {Product.name} from your basket')
+            messages.success(request, f'Removed {product.name} from your basket')
 
         request.session['basket'] = basket
         return HttpResponse(status=200)
 
     except Exception as e:
-        messages.error(requst, f'Error removing item: (e)')
+        messages.error(request, f'Error removing item: {e}')
         return HttpResponse(status=500)
