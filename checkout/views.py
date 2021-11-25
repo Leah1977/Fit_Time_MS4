@@ -20,7 +20,7 @@ def checkout(request):
     if request.method == 'POST':
         basket = request.session.get('basket', {})
 
-        from_data = {
+        form_data = {
             'full_name': request.POST['full_name'],
             'email': request.POST['email'],
             'phone_number': request.POST['phone_number'],
@@ -44,9 +44,9 @@ def checkout(request):
                             quantity=item_data,
                         )
                         order_line_item.save()
-                   else:
-                       for size, quantity in item_data['items_by_size'].items();
-                           order_line_item = OrderLineItem(
+                    else:
+                       for size, quantity in item_data['items_by_size'].items():
+                            order_line_item = OrderLineItem(
                                 order=order,
                                 product=product,
                                 quantity=quantity,
@@ -111,7 +111,7 @@ def checkout_success(request, order_number):
         del request.session['basket']
 
     template = 'checkout/checkout_success.html'
-    contest = {
+    context = {
         'order': order,
     }
 
