@@ -1,11 +1,14 @@
-from django.shortcuts import render, redirect, reverse
+from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.conf import settings
 
+from .forms import OrderForm
+from .models import Order, OrderLineItem
+from products.models import Product
+from basket.contexts import basket_contents
+
 import stripe
 
-from basket.contexts import basket_contents
-from .forms import OrderForm
 
 # Create your views here.
 
@@ -113,4 +116,3 @@ def checkout_success(request, order_number):
     }
 
     return render(request, template, context)
-    
