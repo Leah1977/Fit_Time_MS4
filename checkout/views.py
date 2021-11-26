@@ -2,13 +2,12 @@ from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.conf import settings
 
-from .forms import OrderForm
-from .models import Order, OrderLineItem
-from products.models import Product
-from basket.contexts import basket_contents
-
 import stripe
 
+from products.models import Product
+from basket.contexts import basket_contents
+from .forms import OrderForm
+from .models import Order, OrderLineItem
 
 # Create your views here.
 
@@ -45,7 +44,8 @@ def checkout(request):
                         )
                         order_line_item.save()
                     else:
-                       for size, quantity in item_data['items_by_size'].items():
+                        for size, quantity in item_data[
+                                'items_by_size'].items():
                             order_line_item = OrderLineItem(
                                 order=order,
                                 product=product,
@@ -57,7 +57,7 @@ def checkout(request):
                     messages.error(request, (
                         "That product is no longer available")
                     )
-                    ordre.delete()
+                    order.delete()
                     return redirect(reverse('view_basket'))
 
             request.session['save_info'] = 'save-info' in request.POST
@@ -79,7 +79,6 @@ def checkout(request):
             amount=stripe_total,
             currency=settings.STRIPE_CURRENCY,
         )
-
 
         order_form = OrderForm()
 
