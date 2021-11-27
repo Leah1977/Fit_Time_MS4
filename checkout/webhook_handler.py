@@ -32,7 +32,7 @@ class StripeWH_Handler:
 
         # Store the billing and delivery details
         billing_details = intent.charges.data[0].billing_details
-        delivery_details = intent.delivery_details
+        delivery_details = intent.delivery
         grand_total = round(intent.charges.data[0].amount / 100, 2)
 
         # Clear data in the delivery details
