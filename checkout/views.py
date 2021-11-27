@@ -51,8 +51,11 @@ def checkout(request):
             'county': request.POST['county'],
         }
         order_form = OrderForm(form_data)
+        # If order form is valid
         if order_form.is_valid():
             order = order_form.save()
+            # get client secret if order form is valid
+            pid = request.POST.get('client_secret').split('_secret')[0]
             for item_id, item_data in basket.items():
                 try:
                     product = Product.objects.get(id=item_id)
@@ -78,7 +81,7 @@ def checkout(request):
                     )
                     order.delete()
                     return redirect(reverse('view_basket'))
-
+            # Save information
             request.session['save_info'] = 'save-info' in request.POST
             return redirect(reverse('checkout_success', args=[order.order_number]))
         else:
