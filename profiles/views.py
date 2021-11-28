@@ -3,7 +3,7 @@ from django.contrib import messages
 
 from .models import UserProfile
 from .forms import UserProfileForm
-from checkout.models import orders
+from checkout.models import Order
 
 
 def profile(request):
@@ -11,7 +11,7 @@ def profile(request):
     profile = get_object_or_404(UserProfile, user=request.user)
 
     if request.method == 'POST':
-        form = UserProfileForm((request.POST, isinstance=profile)
+        form = UserProfileForm(request.POST, isinstance = profile)
         if form.is_valid():
             form.save()
             message.success(request, 'Profile successfully updated')
@@ -28,18 +28,19 @@ def profile(request):
 
     return render(request, template, context)
 
-    def order_history(request, order_number)
-        order = get_object_or_404(Order, order_number=order_number)
 
-        messages.info(request, (
-            f'This is a previous confirmation for order { order_number }.'
-        ))
+def order_history(request, order_number):
+    order = get_object_or_404(Order, order_number=order_number)
 
-        template = 'checkout/checkout_success.html'
-        context = {
-            'order' = order,
-            'from_profile': True,
-        }
-        
-        return render(request, template, context)
+    messages.info(request, (
+        f'This is a previous confirmation for order { order_number }.'
+    ))
+
+    template = 'checkout/checkout_success.html'
+    context = {
+        'order' : order,
+        'from_profile': True,
+    }
+    
+    return render(request, template, context)
 
