@@ -113,7 +113,7 @@ def checkout(request):
                 profile = UserProfile.objects.get(user=request.user)
                 order_form = OrderForm(initial={
                     'full_name': profile.user.get_full_name,
-                    'email': profile.user_email,
+                    'email': profile.user.email,
                     'phone_number': profile.default_phone_number,
                     'postcode': profile.default_postcode,
                     'town_or_city': profile.default_town_or_city,
@@ -166,7 +166,7 @@ def checkout_success(request, order_number):
                 'default_county': order.county,
 
             }
-            user_profile_form = UserProfileForm(profile-data, instance=profile)
+            user_profile_form = UserProfileForm(profile_data, instance=profile)
             if user_profile_form.is_valid():
                 user_profile_form.save()
 
