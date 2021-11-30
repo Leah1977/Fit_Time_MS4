@@ -10,14 +10,14 @@ from checkout.models import Order
 def profile(request):
     """Display the user's profile."""
     profile = get_object_or_404(UserProfile, user=request.user)
-
     if request.method == 'POST':
         form = UserProfileForm(request.POST, instance=profile)
         if form.is_valid():
             form.save()
             messages.success(request, 'Profile successfully updated')
         else:
-            messages.error(request, 'Update failed. Please ensure the form is valid')
+            messages.error(request, 'Update failed. \
+                Please ensure the form is valid')
 
     form = UserProfileForm(instance=profile)
     orders = profile.orders.all()
@@ -41,9 +41,8 @@ def order_history(request, order_number):
 
     template = 'checkout/checkout_success.html'
     context = {
-        'order' : order,
+        'order': order,
         'from_profile': True,
     }
-    
-    return render(request, template, context)
 
+    return render(request, template, context)
