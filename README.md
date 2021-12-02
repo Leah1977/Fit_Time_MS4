@@ -266,3 +266,147 @@ As a designer, I would expect
 
 
 With these user stories in mind, I put together some wireframes.  I included all the primary requirements and issues that were raised from my user story research.
+
+
+## Scope
+
+### Essentials will include
+
+* Create Categories function
+
+* Edit Categories function
+
+* Delete Categories function
+ 
+
+* Create Products function
+
+* Edit Products function
+
+* Delete Products function
+
+## Additional Features
+
+* I would like to add a favourites section.
+
+* I would like to add an option for users to add products to their personal favourites.
+
+* I would like to add a blog section for users to add tried and tested products from the website.
+
+#### This project will include four separate pages to be available to all users.
+
+* Home page
+* Products page
+* Classes page
+* Registration Form
+* Sign In Form
+
+#### This project will include five separate pages available to all registered and logged in users only.
+
+* Home page
+* Profile page
+* My Shopping Bag
+* My Classes
+* Log out option
+
+#### This project will include a further option for the admin user only.
+
+* Home page
+* Profile page
+* Manage Categories
+* Create Products page
+* Edit Products page
+* Log out option
+
+  
+
+## Color Scheme
+
+### I will use the colours in the main body, header and footer
+
+
+![Color Scheme](static/images/readme_images/colours.png)
+
+My primary colours will be blue, black and white.  I will use variations of these colours to add designs that stand out and appeal to the user.
+
+I used [Coolers](http://www.coolers.co) to generate my colours for the project. I then used variations within the project.
+
+## Typography
+
+### I will use the following fonts throughout the website for consistency in style.
+
+
+* Raleway
+
+![Raleway Font](static/images/readme_images/RalewayFont.png)
+
+The Raleway font is used for primary headings and paragraphs throughout the project.
+
+* Lobster  
+
+![Lobster Font](static/images/readme_images/lobsterFont.png)
+
+I chose this font for the main app title.
+
+I also used this for some main headings throughout the site.
+
+* Sans Serif will be used as a backup.
+
+
+
+  
+## Project display
+
+
+This project is responsive to appear on different screen sizes.
+
+The display changes to accommodate smaller screen sizes. 
+
+This project is specifically designed to engage with the user. We are encouraging the user to interact with the shopping app.
+
+This project will have specific responses depending on the users' decisions and engagement.
+
+There will be the primary navigation system and structured layout.
+
+## Languages and Technologies
+
+  
+
+* [HTML](http://wwww.html.com) Used for all four HTML pages as the primary markup language for this project.
+
+* [CSS](http://www.css-tricks.com) Used to style the content of my website.
+
+* [JavaScript](http://www.javascript.com).
+
+* [Python3](www.python.org)
+
+* [JQuery]
+
+* [Flask]
+
+In this project, I used the following to help build my website.
+  
+
+* [Font Awesome](https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css) for all the great icons.
+
+* [Google Fonts](https://fonts.googleapis.com/css2?)
+
+* [Balsamique](https://balsamiq.com/)
+
+* [hover.css](https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css).
+
+* [Bootstrap](https://bootstrap.com/) 
+
+Code used from Bootstrap for footer and then edited to suit needs.
+
+
+* [Heorku](https://dashboard.heroku.com/)
+
+* [Github](https://github.com/)
+
+* [Gitpod](https://www.gitpod.io/)
+
+* [Pep8online](http://pep8online.com/)
+
+
+## Database
