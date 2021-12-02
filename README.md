@@ -130,3 +130,10 @@ This page will allow the player to sign up for further information on updates fo
 
 The sign-up form is to register with our site to be notified of updates.
 
+# UX
+
+## Skeleton:
+
+### I have used Balsamique to draw up 3-page wireframes for Mobile, iPad and Desktop.
+ 
+### Click here for a link to the Wireframes [Balsamique FamilyFavs](static/images/fit_time_wireframes.pdf)
