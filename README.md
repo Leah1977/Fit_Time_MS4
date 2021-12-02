@@ -502,3 +502,23 @@ SECRET_KEY  <your_secret_key>
 6. Under the Repository Family_Favs, click download.
 
 7. This will trigger a new gitpod workspace that you can work on.
+
+### Acknowledgements
+
+  
+Much thanks to my mentor Nishant Kumar for giving great support and encouragement throughout my third Milestone Project.
+
+Much thanks to Code Institute Tutors for pointing me in the right direction when I was going off course.  The support from the tutors
+was always excellent and their patience with me was much appreciated.
+
+Thanks also to support from the Slack Community. 
+
+Thanks also to my husband and family for supporting me through this project and providing invaluable feedback.
+
+# Disclaimer Note
+
+This project is for educational purposes only.
+
+### End of README
+
+[Return to Table of Contents](#table-of-contents)
