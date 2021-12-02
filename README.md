@@ -305,7 +305,7 @@ With these user stories in mind, I put together some wireframes.  I included all
 
 * Home page
 * Profile page
-* My Shopping Bag
+* My Shopping Basket
 * My Classes
 * Log out option
 
@@ -423,6 +423,54 @@ Code used throughout this project was learned and implemented from the [Code Ins
 ### [Google Fonts](https://fonts.googleapis.com/css2?)
 
 ### Images/Media
+
+White T-Shirt
+Photo by <a href="https://unsplash.com/@anomaly?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Anomaly</a> on <a href="https://unsplash.com/s/photos/t-shirt-model?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+ 
+Runners
+Photo by <a href="https://unsplash.com/@ziphaus?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">ziphaus</a> on <a href="https://unsplash.com/s/photos/sports-shorts?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+
+Tracksuit Bottoms
+Photo by <a href="https://unsplash.com/@churckyno7?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Bryant Churckyno</a> on <a href="https://unsplash.com/s/photos/tracksuit-bottoms?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+ 
+Hoody
+Photo by <a href="https://unsplash.com/@dansenior?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Dan Senior</a> on <a href="https://unsplash.com/s/photos/tracksuit-bottoms?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+
+Reindeer jumper
+
+Photo by <a href="https://unsplash.com/@sttefunn?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Stte Funn</a> on <a href="https://unsplash.com/s/photos/christmas-jumper?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+ 
+ 
+Runners
+Photo by <a href="https://unsplash.com/@jakobowens1?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jakob Owens</a> on <a href="https://unsplash.com/s/photos/runners?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
+
+Smoothie
+Glass of Berry Milk Shake, Closeup
+Photo • 5760 × 3840 px
+
+By Olga Yastremska's Images
+
+pilates class
+Photo • 4623 × 3082 px
+
+By aerogondo
+
+Green Smoothie
+Photo by <a href="https://unsplash.com/@apollofotografie?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Giorgi Iremadze</a> on <a href="https://unsplash.com/s/photos/green-smoothie?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+ 
+ 
+Photo by <a href="https://unsplash.com/@johnarano?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">John Arano</a> on <a href="https://unsplash.com/s/photos/running-class?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+weights
+  
+Photo by <a href="https://unsplash.com/@capstoneeventgroup?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Capstone Events</a> on <a href="https://unsplash.com/s/photos/running-class?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+Running
+  
+Photo by <a href="https://unsplash.com/@victorfreitas?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Victor Freitas</a> on <a href="https://unsplash.com/s/photos/weights?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+Weights
+  
+Photo by <a href="https://unsplash.com/@dncerullo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Danielle Cerullo</a> on <a href="https://unsplash.com/photos/YJdCZba0TYE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+Intermediate level
 
 ## Further References
 
