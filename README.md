@@ -137,3 +137,132 @@ The sign-up form is to register with our site to be notified of updates.
 ### I have used Balsamique to draw up 3-page wireframes for Mobile, iPad and Desktop.
  
 ### Click here for a link to the Wireframes [Balsamique FamilyFavs](static/images/fit_time_wireframes.pdf)
+
+## Project Goals.
+
+  
+### This project provides a back-end user-centric web application.  It is intended to provide a space where the user can purchase sports apparell, sign up for classes and get nutritional information.
+
+
+* To allow the user to shop securely online.
+
+* To allow the user to edit their shopping bag.
+
+* To allow the user to delete previously added items from their shopping bag.
+
+## Strategy
+
+### This website is for users shop online.
+
+* I want to provide an application for users to shop securely online.
+
+* I want the site to be intuitive.
+
+* I want the user to navigate the site with ease.
+
+## User Story 1
+
+  
+### What do I expect to find on a sports app?
+
+1. I expect to be able to navigate around the app with ease.
+
+2. I expect to be able to search for items to buy.
+
+3. I would expect the app to be visually appealing.
+
+5. I would like to be able to edit my shopping bag.
+
+6. I would like the site to be informative.
+
+
+## User Story 2
+
+  As a website user, I want the app to be easy to use.  I would expect to be able to register and for my details to be secure and safe.
+
+### What do I expect to find on a web application?
+
+  
+
+1. Can I view my shopping bag?
+
+2. Can I edit my shopping bag?
+
+3. Can I delete items from my shopping bag?
+
+  
+
+## User Story 3
+
+### Would this app be suitable for younger family members?
+
+  
+
+1. Is the website suitable for all family members?
+
+2. Is it easy to navigate?
+
+3. What age is the app intended?
+
+  
+
+As a user, I would like to be able to edit my shopping bag.
+  
+## User Story 4
+
+### Would this app have a good range of items?
+
+  
+1. Is the app easy to navigate?
+
+2. Are there educational advantages to this app?
+
+
+As a user, I would like to share my experiences and opinions of items bought.
+ 
+
+As a first time user, I would expect
+
+•   A registration option.
+
+•   A login option.
+
+•   Good Graphics
+
+•   A good variety of items to buy.
+
+•   A search option
+  
+
+As a returning user, I would expect 
+
+
+•   A login option to create a user profile. 
+
+•   My profile page is to be private for my use.
+
+•   Updated content.
+
+  
+
+As a designer, I would expect
+
+  
+
+•   All buttons to be working
+
+•   All links to be active
+
+•   To be able to navigate through the site with ease
+
+•   To have a 404 page to return users to the home page.
+
+•   Striking colours to engage the user
+
+•   To be able to add or delete categories.
+
+*   To be able to add or delete products.
+  
+
+
+With these user stories in mind, I put together some wireframes.  I included all the primary requirements and issues that were raised from my user story research.
