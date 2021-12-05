@@ -1,17 +1,15 @@
 from django.contrib import admin
-from .models import ProductReview
-
-
-# Register your models here.
+from .models import Review
 
 
 class ReviewAdmin(admin.ModelAdmin):
     list_display = (
-        'name',
+        'title',
         'product',
         'user',
         'rating',
         'date_posted',
     )
 
-admin.site.register(ProductReview)
+
+admin.site.register(Review)
