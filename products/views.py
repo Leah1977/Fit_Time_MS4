@@ -10,7 +10,6 @@ from reviews.models import Review
 from reviews.forms import ReviewForm
 
 
-# A view to render the all products template
 def all_products(request):
     """ A view to show all products, including sorting and search queries """
 
@@ -46,7 +45,8 @@ def all_products(request):
                 messages.error(request, "No search criteria submitted!")
                 return redirect(reverse('products'))
 
-            queries = Q(name__icontains=query) | Q(
+            queries = Q(
+                name__icontains=query) | Q(
                 description__icontains=query)
             products = products.filter(queries)
 

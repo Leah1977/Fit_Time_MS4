@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col text-center mt-3">
+                <h2 class = "logo-font">Contact Us</h2>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content%}
+    <div class="container">
+        <div class="row h-100">
+            <div class="col-9 col-md-6 my-auto">
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d152515.25333588192!2d-6.385785668716236!3d53.32444313798125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e80ea27ac2f%3A0xa00c7a9973171a0!2sDublin!5e0!3m2!1sen!2sie!4v1638717042917!5m2!1sen!2sie" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <p class="contact-address">
+                    789 Dublin Road,
+                    <br>Dublin,
+                    <br>Ireland,
+                    <br>H67 Y678. 
+                </p>
+                <p class="Open-hours">
+                    Monday - Sunday: 7am - 7pm
+                </p>
+            </div>
+        </div>
+    </div>
+<!-- Contact Form -->
+
+<div class="container">
+    <h3>Contact Us:</h3>
+    <form>
+        <label for="emailaddress">Email address</label>
+        <input type="email" class="form-control" id="emailaddress" placeholder="name@example.com">
+        <label for="fullname">Full Name</label>
+        <input type="email" class="form-control" id="fullname" placeholder="Full Name">
+        <div class="form-group">
+          <label for="contactmessage">Message</label>
+          <textarea class="form-control" id="contactmessage" rows="10"></textarea>
+        </div>
+        <input class="clear-button" type="reset" value="Clear Form"/>
+        <button form="btn-form" type="submit" id="submit">Submit Form</button>
+    </form>
+</div>
+{% endblock %}

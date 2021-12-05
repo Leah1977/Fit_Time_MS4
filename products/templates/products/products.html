@@ -58,7 +58,7 @@
                     {% for product in products %}
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                             <!-- code for card from bootstrap -->
-                            <div class="card h-100 border-0">
+                            <div class="card h-90 border-0 mb-2">
                                     {% if product.image %}
                                     <a href="{% url 'product_detail' product.id %}">
                                         <img src="{{ product.image.url }}" class="card-img-top img-fluid" alt="{{ product.name }}">
@@ -68,13 +68,13 @@
                                         <img src="{{ MEDIA_URL }}media/no-picture-available.jpg" class="card-img-top img-fluid" alt="{{ product.name }}">
                                     </a>
                                     {% endif %}
-                                    <div class="card-body pb-0">
+                                    <div class="card-body pb-2 text-black">
                                         <p class="mb-0">{{ product.name }}</p>
                                     </div>
-                                    <div class="card-footer bg-white pt-0 border-0 text-left">
+                                    <div class="card-footer bg-white pt-0 border-2 text-left">
                                         <div class="row">
                                             <div class="col">
-                                                <p class="lead mb-0 text-left font-weight-bold">€{{ product.price }}</p>
+                                                <p class="lead mb-0 text-left font-weight-bold text-black">€{{ product.price }}</p>
                                                 <!-- link for category -->
                                                 {% if product.category %}
                                                 <p class="small mt-1 mb-0">
