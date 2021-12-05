@@ -49,7 +49,39 @@
                             <a href="{% url 'edit_product' product.id %}">Edit</a>
                             <a href="{% url 'delete_product' product.id %}" class="text-danger">Delete</a>
                         </small>
-                    {% endif %}    
+                    {% endif %}
+                    
+                    <!-- link for product review -->
+                    <div class="reviews-wrapper">
+                        <div class="review text-danger">
+                            <h4>Write a review</h4>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col">
+                                <form action="{% url 'add_review' product.id %}" class="form" enctype="multipart/form-data">
+                                {% csrf_token %}
+                                {{ form|crispy }}
+                                    <div>
+                                        <button class="btn btn-black rounded-1 mt-4 mr-4" type="submit">Leave a review</a>
+                                        <a href="{% url 'product_detail' product.id%}" class="btn btn-danger mt-4 mr-4">Cancel</a>
+                                    </div>    
+                                </form>
+                            </div>
+                        </div>
+                        
+                        {% for review in product.reviews.all %}
+                            <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.review }} / 5</small>
+                        {% endfor %}
+                            <small class="ml-3">
+                                <a href="{% url 'edit_review' product.id %}">Edit</a>
+                            {% if request.user.is_superuser %}
+                                <a href="{% url 'delete_review' product.review.id %}" class="text-danger">Delete</a>
+                            </small>
+                            {% endif %}
+                        </div>
+                    </div>
+                    
                     <p class="mt-3">{{ product.description }}</p>
                     <!-- form to add a product to the shopping bag -->
                     <!-- form from bootstrap and changed to suit -->
@@ -93,4 +125,5 @@
             </div>
         </div>
     </div>
+{% include 'reviews/includes/reviews.html' %}
 {% endblock %}
