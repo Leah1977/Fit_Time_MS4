@@ -1,0 +1,61 @@
+{% block content %}
+{% load static %}
+
+<!-- cover up the background image -->
+<div class="overlay"></div>
+    <!-- Reviews container -->
+    <div class="reviews-wrapper">
+        <div>
+            <a href="{ url 'add_review' product.id %}" class="btn btn-info mt-4">Add a review</a>
+        </div>
+        {% if reviews %}
+            {% for review in reviews %}
+                <h4 class="text-uppercase">{{ review.title }}</h4>
+                <hr>
+                    <tr>
+                        <td>
+                            <a href="/product/{{ review.product.name }}/{{ review.product.id }}"></a>
+                        </td>
+                        <td>{{ review.review }}</td>
+                        <td>{{ review.rating }}</td>
+                    </tr>
+                {% if request.user.is_authenticated %}
+                    {% if request.user|lower == review.user|lower %}
+                        <div>
+                            <a href="{% url 'edit_review' review.id %}">Edit Review</a>
+                        </div>
+                        <div>
+                            <a href="{% url 'delete_review' review.id %}" class="text-danger">Delete Review</a>
+                        </div>
+                    {% endif %}
+                {% endif %}
+            {% endfor %}
+        {% endif %}
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col text-center mt-3">
+                <h2 class="logo-font">Reviews</h2>
+                <hr class="w-50 mb-1">
+            </div>
+            <div class="col-md-9">
+                <table class="table-bordered table">
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Image</th>
+                            <th>Price</th>
+                            <th>Review</th>
+                            <th>Rating</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="btt-button shadow-sm rounded-0 border border-black">
+        <a class="btt-link d-flex h-100">
+            <i class="fas fa-arrow-up text-black mx-auto my-auto"></i>
+        </a>
+    </div>
+{% endblock %}
