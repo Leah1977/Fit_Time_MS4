@@ -1,11 +1,9 @@
 from django.db import models
-from django.contrib.auth.models import User
 from profiles.models import UserProfile
 from products.models import Product
 
-# Create your models here.
 
-class ProductReview(models.Model):
+class Review(models.Model):
     """ allow a user to write a review on a Product """
 
     RATING_OPTIONS = (
@@ -17,9 +15,9 @@ class ProductReview(models.Model):
     )
 
     user = models.ForeignKey(
-        User,
+        UserProfile,
         related_name='reviews',
-        on_delete=models.CASCADE,   
+        on_delete=models.CASCADE,
     )
 
     product = models.ForeignKey(
@@ -28,10 +26,10 @@ class ProductReview(models.Model):
         related_name='reviews',
     )
 
-    content = models.TextField(blank=True, null=True)
+    title = models.CharField(max_length=254)
+    comment = models.TextField(blank=True, null=False)
     rating = models.IntegerField(default=0, choices=RATING_OPTIONS)
     created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return str(self.review)
-        
+        return str(self.title)
