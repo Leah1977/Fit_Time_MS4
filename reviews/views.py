@@ -1,153 +1,142 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib.auth.decorators import login_required
-from django.db.models.functions import Lower
+from django.contrib import messages
 
-from .models import Product, ProductReview
-from .forms import ProductReviewForm
-
-# A view to render all Reviews
-
-def reviews(request)
-reviews=ProductReview.objects.filter(user=request.user).order_by('-id')
-return render(request, 'user/reviews.html', {'reviews': reviews})
+from .models import Review
+from .forms import ReviewForm
+from products.models import Product
+from profiles.models import UserProfile
 
 
+# # A view to render the all reviews template
+# def all_reviews(request):
+#     """ A view to show all reviews """
+
+#     reviews = Review.objects.all()
+#     direction = None
+
+#     context = {
+#         'reviews': reviews,
+#         'search_term': query,
+#         'current_categories': categories,
+#         'current_sorting': current_sorting,
+#     }
+
+#     reviews = Review.objects.filter(user=request.user).order_by('-id')
+
+#     return render(request, 'user/reviews.html', {'reviews': reviews})
 
 
+# # A view to render the product detail template
+# def product_detail(request, product_id):
+#     """ A view to show individual product details """
+
+#     product = get_object_or_404(Product, pk=product_id)
+
+#     context = {
+#         'product': product,
+#     }
+
+#     return render(request, 'products/product_detail.html', context)
 
 
-# A view to render the all products template
-def all_products(request):
-    """ A view to show all products, including sorting and search queries """
+# A view to render the add review template
 
-    products = Product.objects.all()
-    query = None
-    categories = None
-    sort = None
-    direction = None
+# if request.method == 'POST':
+#     form = ProductForm(request.POST, request.FILES)
+#     if form.is_valid():
+#         product = form.save()
+#         messages.success(request, "Successfully added product!")
+#         return redirect(reverse('product_detail', args=[product.id]))
+#     else:
+#         messages.error(request, 'Failed to add product. \
+#             Please ensure the form is valid')
+# else:
+#     form = ProductForm()
 
-    if request.GET:
-        if 'sort' in request.GET:
-            sortkey = request.GET['sort']
-            sort = sortkey
-            if sortkey == 'name':
-                sortkey = 'lower_name'
-                products = products.annotate(lower_name=Lower('name'))
-            if sortkey == 'category':
-                sortkey = 'category__name'
-            if 'direction' in request.GET:
-                direction = request.GET['direction']
-                if direction == 'desc':
-                    sortkey = f'-{sortkey}'
-            products = products.order_by(sortkey)
+# template = 'products/add_product.html'
+# context = {
+#     'form': form,
+# }
 
-        if 'category' in request.GET:
-            categories = request.GET['category'].split(',')
-            products = products.filter(category__name__in=categories)
-            categories = Category.objects.filter(name__in=categories)
+# return render(request, template, context)
 
-        if 'q' in request.GET:
-            query = request.GET['q']
-            if not query:
-                messages.error(request, "No search criteria submitted!")
-                return redirect(reverse('products'))
-
-            queries = Q(name__icontains=query) | Q(
-                description__icontains=query)
-            products = products.filter(queries)
-
-    current_sorting = f'{sort}_{direction}'
-
-    context = {
-        'products': products,
-        'search_term': query,
-        'current_categories': categories,
-        'current_sorting': current_sorting,
-    }
-
-    return render(request, 'products/products.html', context)
-
-
-# A view to render the product detail template
-def product_detail(request, product_id):
-    """ A view to show individual product details """
-
+@login_required
+def add_review(request, product_id):
+    """ Add a review to a product """
+    user = get_object_or_404(UserProfile, user=request.user)
     product = get_object_or_404(Product, pk=product_id)
 
-    context = {
-        'product': product,
-    }
-
-    return render(request, 'products/product_detail.html', context)
-
-
-# A view to render the add product template
-@login_required
-def add_product(request):
-    """ Add a product to the store """
-    if not request.user.is_superuser:
-        messages.error(request, 'Sorry, For management only.')
-        return redirect(reverse('home'))
-
     if request.method == 'POST':
-        form = ProductForm(request.POST, request.FILES)
+        form = ReviewForm(request.POST)
         if form.is_valid():
-            product = form.save()
-            messages.success(request, "Successfully added product!")
-            return redirect(reverse('product_detail', args=[product.id]))
+            title = request.POST['title']
+            comment = request.POST['comment']
+            rating = request.POST['rating']
+            review = Review.objects.create(
+                user=user,
+                product=get_object_or_404(Product, pk=product_id),
+                title=title,
+                comment=comment,
+                rating=rating)
+            messages.success(request, "Successfully added review!")
+            return redirect(reverse(
+                'product_detail',
+                args=[product.id]
+            ))
         else:
-            messages.error(request, 'Failed to add product. \
+            messages.error(request, 'Failed to add review. \
                 Please ensure the form is valid')
     else:
-        form = ProductForm()
+        form = ReviewForm()
 
-    template = 'products/add_product.html'
+    template = 'reviews/add_review.html'
     context = {
         'form': form,
+        'product': product,
     }
 
     return render(request, template, context)
 
 
-# A view to render the edit product template
+# A view to render the edit review template
 @login_required
-def edit_product(request, product_id):
-    """ Edit a product """
-    if not request.user.is_superuser:
-        messages.error(request, 'Sorry, For management only.')
-        return redirect(reverse('home'))
-
-    product = get_object_or_404(Product, pk=product_id)
+def edit_review(request, review_id):
+    """ Edit a review """
+    review = get_object_or_404(Review, pk=review_id)
     if request.method == 'POST':
-        form = ProductForm(request.POST, request.FILES, instance=product)
+        form = ReviewForm(
+            request.POST, request.FILES,
+            instance=review
+            )
         if form.is_valid():
             form.save()
-            messages.success(request, "Successfully updated product!")
-            return redirect(reverse('product_detail', args=[product.id]))
+            messages.success(request, "Successfully updated review!")
+            return redirect(
+                reverse(
+                'product_detail',
+                 args=(review.product.id)))
         else:
-            messages.error(request, 'Failed to edit product. \
+            messages.error(request, 'Failed to edit review. \
                 Please ensure the form is valid')
     else:
-        form = ProductForm(instance=product)
-        messages.info(request, f'You are editing {product.name}')
+        form = ReviewForm(instance=review)
+        messages.info(request, f'You are editing review for {product.name}')
 
-    template = 'products/edit_product.html'
+    template = 'reviews/edit_review.html'
     context = {
         'form': form,
-        'product': product,
+        'product': review.product,
+        'review': review,
     }
 
     return render(request, template, context)
 
 
 @login_required
-def delete_product(request, product_id):
-    """ Delete a product from the store """
-    if not request.user.is_superuser:
-        messages.error(request, 'Sorry, For management only.')
-        return redirect(reverse('home'))
-
-    product = get_object_or_404(Product, pk=product_id)
-    product.delete()
-    messages.success(request, 'Product deleted!')
-    return redirect(reverse('products'))
+def delete_review(request, review_id):
+    """ Delete a product review """
+    review = get_object_or_404(Review, pk=review_id)
+    review.delete()
+    messages.success(request, 'Review deleted!')
+    return redirect(reverse('product_detail', args=(review.product.id)))
