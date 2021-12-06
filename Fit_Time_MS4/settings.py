@@ -29,7 +29,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', 'Must not be empty')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['Fit-Time-MS4.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['Fit_Time_MS4.herokuapp.com', 'localhost']
 
 
 # Application definition
