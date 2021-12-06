@@ -29,7 +29,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', 'Must not be empty')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['fit-time-ms4.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['Fit-Time-MS4.herokuapp.com', 'localhost']
 
 
 # Application definition
@@ -132,13 +132,13 @@ if 'DATABASE_URL' in os.environ:
     DATABASES = {
         'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
        }
-    else:    
-        DATABASES = {
-            'default': {
-                'ENGINE': 'django.db.backends.sqlite3',
-                'NAME': BASE_DIR / 'db.sqlite3',
-            }
+else:    
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / 'db.sqlite3',
         }
+    }
 
 
 
