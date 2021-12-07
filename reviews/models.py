@@ -27,7 +27,7 @@ class Review(models.Model):
     )
 
     title = models.CharField(max_length=254)
-    comment = models.TextField(blank=True, null=False)
+    comment = models.TextField(default=0, blank=True, null=False)
     rating = models.IntegerField(default=0, choices=RATING_OPTIONS)
     created_at = models.DateTimeField(auto_now_add=True)
 
