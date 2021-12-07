@@ -79,6 +79,7 @@ class StripeWH_Handler:
         # If there is no order already in the database
         order_exists = False
         attempt = 1
+        # check up to 5 times for the order
         while attempt <= 5:
             try:
                 order = Order.objects.get(
@@ -100,6 +101,7 @@ class StripeWH_Handler:
                 break
             except Order.DoesNotExist:
                 attempt += 1
+                # allow to sleep for 1 second
                 time.sleep(1)
         if order_exists:
             self._send_confirmation_email(order)
