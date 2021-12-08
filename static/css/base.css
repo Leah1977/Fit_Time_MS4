@@ -26,6 +26,7 @@ body {
 .logo-font {
     text-transform: uppercase;
     text-shadow: 5px 3px #222;
+    font-family: 'Abril Fatface', cursive;
 }
 
 .main-logo-link {
@@ -106,7 +107,7 @@ a.category-badge > span.badge:hover {
 
 #special-offer-banner {
     width: 100%;
-    font-family: 'Oswald';
+    font-family:'Abril Fatface', cursive;
     text-align: center;
 
 }
@@ -114,6 +115,7 @@ a.category-badge > span.badge:hover {
 .banner-info {
     color: goldenrod;
     text-emphasis-color: black;
+    font-family: 'Abril Fatface', cursive;;
 }
 
 /* ----------------------------------------------------- Search Boxes */
