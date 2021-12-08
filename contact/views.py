@@ -5,7 +5,7 @@ from .models import Contact
 from .forms import ContactForm
 
 def contact(request):
-    """ A view to return the contact page """
+    """ A view to return the contact message """
 
     return render(request, 'contact/contact.html')
 
