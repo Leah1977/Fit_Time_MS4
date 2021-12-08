@@ -175,6 +175,7 @@ input[name='q']::placeholder {
     position: sticky;
     top: 100vh;
     padding-top: 20px;
+    background-color: black;
 }
 
 /* ----------------------------------------------- Allauth form formatting */
@@ -250,7 +251,7 @@ input[name='q']::placeholder {
 
 @media (max-width: 991px) {
     .footer-container {
-        padding-top: 20px;
+        padding-top: 10px;
     }
 
     body {
@@ -291,7 +292,7 @@ input[name='q']::placeholder {
 
 @media (max-width: 812px) {
     .footer-container {
-        padding-top: 20px;
+        padding: 10px;
     }
 
     body {
