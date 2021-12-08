@@ -62,14 +62,17 @@
                                 <form action="{% url 'add_review' product.id %}" class="form" enctype="multipart/form-data">
                                 {% csrf_token %}
                                 {{ form|crispy }}
-                                    <div>
-                                        <button class="btn btn-black rounded-1 mt-4 mr-4" type="submit">Leave a review</a>
+                                    <span>
+                                        <button class="btn btn-black rounded-1 mt-4 mr-4" type="submit">
+                                            Leave a review
+                                        </button>
+                                    </span>
+                                    <span>
                                         <a href="{% url 'product_detail' product.id%}" class="btn btn-danger mt-4 mr-4">Cancel</a>
-                                    </div>    
+                                    </span>
                                 </form>
                             </div>
                         </div>
-                        
                         {% for review in reviews %}
                             <div>
                                 <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.review }} / 5</small>
