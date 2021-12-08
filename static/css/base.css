@@ -260,11 +260,6 @@ input[name='q']::placeholder {
         font-size: 1rem;
     }
 
-    #delivery-banner h
-
-
-}
-
 @media (max-width: 812px) {
     .footer-container {
         padding-top: 116px;
