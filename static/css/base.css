@@ -25,7 +25,7 @@ body {
 
 .logo-font {
     text-transform: uppercase;
-    text-shadow: 5px 5px #222;
+    text-shadow: 5px 3px #222;
 }
 
 .main-logo-link {
@@ -229,17 +229,6 @@ input[name='q']::placeholder {
     body {
         height: calc(100vh - 116px);
     }
-
-    .logo-font {
-        font-size: initial;
-        background-color: chocolate;
-        padding: 10px;
-    }
-
-    .navbar {
-        background: white;
-        color: black;
-    }
 }
 
 @media (max-width: 812px) {
@@ -276,7 +265,10 @@ input[name='q']::placeholder {
         padding: .6rem .6rem;
         font-size: 1rem;
     }
-}
+
+    .logo-font {
+        font-size: initial;
+    }
 
 @media (max-width: 812px) {
     .footer-container {
@@ -287,5 +279,10 @@ input[name='q']::placeholder {
         height: calc(100vh - 116px);
     }
 
+    .header-container {
+        padding-top: 90px;
+    }
+
 }
+
 
