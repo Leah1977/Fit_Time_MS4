@@ -6,7 +6,7 @@ class Contact(models.Model):
     name = models.CharField(max_length=254)
     title = models.CharField(max_length=254)
     message = models.TextField(default=0, blank=True, null=False)
-    email = models.EmailField(max_length=254, blank=False, default=0)
+    email = models.EmailField(default=0, blank=True, null=False)
     created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
