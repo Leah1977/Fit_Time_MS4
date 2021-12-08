@@ -11,7 +11,7 @@ def contact(request):
 
 
 def add_message(request):
-    """ Add a message """
+    """ A view to Add a message """
     
     if request.method == 'POST':
         form = ContactForm(request.POST)
