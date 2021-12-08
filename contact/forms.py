@@ -8,7 +8,7 @@ class ContactForm(forms.ModelForm):
     """
     class Meta:
         model = Contact
-        fields = ['name', 'title', 'message', 'email' ]
+        fields = ['name', 'title', 'message', 'email']
 
     def __init__(self, *args, **kwargs):
         """ Insert placeholders for form """
@@ -19,3 +19,9 @@ class ContactForm(forms.ModelForm):
             'message': 'Message',
             'email': 'Email',
         }
+
+
+        # Add placeholders and classes to input fields
+
+        self.fields['title'].widget.attrs['autofocus'] = True
+            self.fields[field].widget.attrs['class'] = 'border-black rounded-1'
