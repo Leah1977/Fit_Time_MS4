@@ -1,7 +1,7 @@
 from django.db import models
 
 class Contact(models.Model):
-    """ allow a user to Contact with a message """
+    """ allow a user to Contact Us with a message """
 
     name = models.CharField(max_length=254)
     title = models.CharField(max_length=254)
