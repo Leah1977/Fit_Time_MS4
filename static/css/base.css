@@ -229,6 +229,17 @@ input[name='q']::placeholder {
     body {
         height: calc(100vh - 116px);
     }
+
+    .logo-font {
+        font-size: initial;
+        background-color: chocolate;
+        padding: 10px;
+    }
+
+    .navbar {
+        background: white;
+        color: black;
+    }
 }
 
 @media (max-width: 812px) {
@@ -246,11 +257,11 @@ input[name='q']::placeholder {
 
 @media (max-width: 991px) {
     .footer-container {
-        padding-top: 116px;
+        padding-top: 20px;
     }
 
     body {
-        height: calc(100vh - 116px);
+        height: calc(100vh - 20px);
     }
 
     .display-4.log-font.text-black {
@@ -265,10 +276,11 @@ input[name='q']::placeholder {
         padding: .6rem .6rem;
         font-size: 1rem;
     }
+}
 
 @media (max-width: 812px) {
     .footer-container {
-        padding-top: 116px;
+        padding-top: 20px;
     }
 
     body {
