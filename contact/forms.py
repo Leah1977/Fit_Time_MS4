@@ -23,5 +23,6 @@ class ContactForm(forms.ModelForm):
 
         # Add placeholders and classes to input fields
 
-        self.fields['title'].widget.attrs['autofocus'] = True
-        self.fields[field].widget.attrs['class'] = 'border-black rounded-1'
+    self.fields['title'].widget.attrs['autofocus'] = True
+    
+    self.fields[field].widget.attrs['class'] = 'border-black rounded-1'
