@@ -49,7 +49,17 @@
     <body>
         <header class="container-fluid fixed-top">
             <!-- Logo -->
-            <div id="logonav" class="row bg-black pt-lg-2 d-none d-lg-flex">
+            <div id="logonav" class="row pt-lg-2 d-none d-lg-flex">
+                <!-- special offer banner -->
+                <div id = "special-offer-banner" class="row">
+                    <div class="col text-info">
+                        <a href="{% url 'products' %}" class="col-12 col-lg-6 my-auto">
+                            <h4 class="text-blue my-1">
+                                Check Out Today's Top Offers!
+                            </h4>
+                        </a>
+                    </div>
+                </div>
                 <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
                     <a href="{% url 'home' %}" class="nav-link main-logo-link">
                         <h2 class="logo-font text-white my-0"><strong>Fit Time</strong>
@@ -110,16 +120,7 @@
                         </li>
                     </ul>
                 </div>
-                <!-- special offer banner -->
-                <div id = "special-offer-banner" class="row">
-                    <div class="col text-info">
-                        <a href="{% url 'products' %}" class="col-12 col-lg-6 my-auto">
-                            <h4 class="text-blue my-1">
-                                Check Out Today's Top Offers!
-                            </h4>
-                        </a>
-                    </div>
-                </div>
+                
                 <div class="col-12 col-lg-4 my-auto py-1 py-lg-0"></div>
             </div>
             <div class="row bg-black">
