@@ -8,5 +8,6 @@ class ContactAdmin(admin.ModelAdmin):
         'name',
         'title',
         'message',
+        'email',
         'created_at',
     )
