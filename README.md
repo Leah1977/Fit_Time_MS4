@@ -336,7 +336,7 @@ I used [Coolers](http://www.coolers.co) to generate my colours for the project. 
 ### I will use the following fonts throughout the website for consistency in style.
 
 
-* Raleway
+* Roboto
 
 ![Raleway Font](static/images/readme_images/RalewayFont.png)
 
@@ -471,6 +471,10 @@ Weights
   
 Photo by <a href="https://unsplash.com/@dncerullo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Danielle Cerullo</a> on <a href="https://unsplash.com/photos/YJdCZba0TYE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 Intermediate level
+
+Favicon
+
+Created with https://www.canva.com/ and favicon generator
 
 ## Further References
 
