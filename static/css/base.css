@@ -171,6 +171,7 @@ input[name='q']::placeholder {
 .footer-container {
     position: sticky;
     top: 100vh;
+    padding-top: 20px;
 }
 
 /* ----------------------------------------------- Allauth form formatting */
