@@ -109,7 +109,7 @@ a.category-badge > span.badge:hover {
     width: 100%;
     font-family:'Abril Fatface', cursive;
     text-align: center;
-
+    color: goldenrod;
 }
 
 .banner-info {
