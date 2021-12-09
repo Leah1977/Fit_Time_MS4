@@ -202,7 +202,7 @@ input[name='q']::placeholder {
 
 .allauth-form-inner-content {
     border-color: #000;
-    border-radius: 1;
+    border-radius: 1px;
 }
 
 .allauth-form-inner-content label:not([for='id_remember']) {
@@ -295,19 +295,9 @@ input[name='q']::placeholder {
     body {
         height: calc(100vh - 116px);
     }
-}
 
-
-
-/* ---------------------------padding for mobile to push images above footer */
-
-@media (max-width: 991px) {
     .footer-container {
         padding-top: 10px;
-    }
-
-    body {
-        height: calc(100vh - 20px);
     }
 }
 
