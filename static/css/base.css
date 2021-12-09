@@ -7,7 +7,7 @@ html {
 body {
     background: url('/media/homepage_background.jpg') no-repeat center center fixed;
     background-size: cover;
-    height: calc(100vh - 164px);
+    height: 100vh;
     color: #fafafa;
     font-family: 'Oswald'; 
 }
@@ -226,39 +226,7 @@ input[name='q']::placeholder {
     }
 }
 
-/* ----------------------------padding for mobile to push images below navbar */
 
-@media (max-width: 991px) {
-    .header-container {
-        padding-top: 116px;
-    }
-
-    body {
-        height: calc(100vh - 116px);
-    }
-}
-
-@media (max-width: 812px) {
-    .header-container {
-        padding-top: 216px;
-    }
-
-    body {
-        height: calc(100vh - 216px);
-    }
-
-}
-
-/* ---------------------------padding for mobile to push images above footer */
-
-@media (max-width: 991px) {
-    .footer-container {
-        padding-top: 10px;
-    }
-
-    body {
-        height: calc(100vh - 20px);
-    }
 
     .display-4.log-font.text-black {
         font-size: 2rem;
@@ -292,19 +260,5 @@ input[name='q']::placeholder {
         padding: .25rem .5rem !important;
     }
 
-@media (max-width: 812px) {
-    .footer-container {
-        padding: 10px;
-    }
-
-    body {
-        height: calc(100vh - 116px);
-    }
-
-    .header-container {
-        padding-top: 90px;
-    }
-
-}
 
 
