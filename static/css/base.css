@@ -19,7 +19,7 @@ h4 {
 
 hr {
     width: 50%;
-    border: 4px solid blue;
+    border: 4px solid rgba(6, 6, 12, 0.877);
 }
 /* from Bulma */
 
@@ -296,22 +296,29 @@ input[name='q']::placeholder {
         height: calc(100vh - 116px);
     }
 
+    .display-4.logo-font.text-white {
+        font-size: 2rem;
+    }
+
+    .nav-link {
+        padding: 0.15rem;
+    }
+
+    .nav-link i.fa-lg {
+        font-size: 1rem;
+    }
+
+    .navbar-toggler {
+        padding: .6rem .6rem;
+        font-size: 1rem;
+    }
+
+    #delivery-banner h4 {
+        font-size: .9rem;
+    }
+
     .footer-container {
         padding-top: 10px;
-    }
-}
-
-@media (max-width: 812px) {
-    .footer-container {
-        padding: 10px;
-    }
-
-    body {
-        height: calc(100vh - 90px);
-    }
-
-    .header-container {
-        padding-top: 90px;
     }
 
     #special-offer-banner {
@@ -321,17 +328,21 @@ input[name='q']::placeholder {
         padding-top: 24px;
     }
 
-}
-
-
-@media (max-width: 568px) {
-    
-    h4 {
-        font-size: 1rem;
-    }
-
     .banner-info {
-        font-size: 20px;
+        font-size: .8rem;
     }
-}
 
+    h4 {
+        font-size: .5rem;
+    }
+
+    .shop-now-button.btn.btn-lg.rounded-4 {
+        padding: .375rem .375rem;
+        font-size: .75rem;
+    }
+
+    .increment-qty, .decrement-qty {
+        padding: .25rem .5rem !important;
+    }
+
+}
