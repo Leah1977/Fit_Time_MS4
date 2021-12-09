@@ -8,6 +8,7 @@ body {
     background: url('/media/homepage_background.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
+    overflow-x: hidden;
     color: #fafafa;
     font-family: 'Oswald', sans-serif; 
 }
@@ -318,7 +319,7 @@ input[name='q']::placeholder {
     }
 
     body {
-        height: calc(100vh - 116px);
+        height: calc(100vh - 90px);
     }
 
     .header-container {
