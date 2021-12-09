@@ -106,12 +106,19 @@ a.category-badge > span.badge:hover {
     cursor: pointer;
 }
 
+/* ----------------------------------------------------- Message */
+
+.main-message {
+    padding-top: 300px;
+}
+
 /* ----------------------------------------------------- Banner */
 
 #special-offer-banner {
     font-family:'Abril Fatface', sans-serif;
     text-align: center;
     color: goldenrod;
+    padding-top: 503px;
 }
 
 .banner-info {
@@ -246,7 +253,8 @@ input[name='q']::placeholder {
     }
 
     .logo-font {
-        font-size: initial;
+        font-size: 5rem;
+        padding-top: 6rem;
     }
 
     .btn.btn-black.rounded-1,
@@ -311,6 +319,13 @@ input[name='q']::placeholder {
 
     .header-container {
         padding-top: 90px;
+    }
+
+    #special-offer-banner {
+        font-family:'Abril Fatface', sans-serif;
+        text-align: center;
+        color: goldenrod;
+        padding-top: 24px;
     }
 
 }
