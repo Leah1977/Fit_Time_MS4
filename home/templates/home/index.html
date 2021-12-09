@@ -25,9 +25,8 @@
                 </div>
             </div>
         </div>
-    </div>
-    <!-- special offer banner -->
-    <div class="container h-20">
+    
+        <!-- special offer banner -->
         <div id = "special-offer-banner" class="row text-center w-100">
             <div class="col bg-black text-white text-info">
                 <a href="{% url 'products' %}" class="col-12 my-auto">
@@ -37,14 +36,11 @@
                 </a>
             </div>
         </div>
-        <div class="row">
-            <div class="col"></div>
-        </div>
         <!-- delivery banner -->
         <div id="shipping-banner" class="row text-center">
             <div class="col bg-white text-black w-100">
                 <h4 class="my-1">Free shipping on orders over €{{ free_shipping_threshold }}</h4>
             </div>
-        </div>
-    
+        </div> 
+    </div>
 {% endblock %}
