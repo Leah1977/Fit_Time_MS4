@@ -143,7 +143,7 @@ Users can click on an image and view the product on it's own page.
 Here they can view a large image and some purchasing options.
 Users can select quantity etc and add to shopping bag.
 
-## Review
+## Reviews
 
 Users can leave a review on an item and can also view other users reviews.
 Logged in users can edit/delete their own review.
@@ -158,6 +158,30 @@ Users will also have the option to leave a message with the contact us form.
 ## Profiles
 
 Users can create a profile page.
+
+Users will be able to save information for future purchases.
+They will be able to edit or delete information as necessary.
+They can also view their order history.
+
+## Checkout
+
+The checkout section will allow users to enter their shipping details and payment details.
+
+The payment will be processed using Stripe.
+
+## Django-allauth
+
+- Python package django-allauth will be used.
+- This built-in application is used for user registration and authentication.
+- It allows us to inclucde signup, passwords, login and logout features.
+
+
+## Toasts 
+
+There will be four different toasts displaying to users - messages to provide feedback on thier actions.
+These will include messages for success, warnings, errors, and info.
+
+
 
 # UX
 
@@ -424,38 +448,48 @@ There will be the primary navigation system and structured layout.
 
 * [Python3](www.python.org)
 
-* [JQuery]
+* [Django](https://www.djangoproject.com/) - Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design.
 
-* [Flask]
+* [Stripe](https://stripe.com/ie) - a payments infrastructure for the internet.
 
 In this project, I used the following to help build my website.
   
 
 * [Font Awesome](https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css) for all the great icons.
 
-* [Google Fonts](https://fonts.googleapis.com/css2?)
+* [Google Fonts](https://fonts.googleapis.com/css2?) - A great resource for fonts to use throughout the site.
 
-* [Balsamique](https://balsamiq.com/)
+* [Balsamique](https://balsamiq.com/) - used to create my wireframes for this project.
 
 * [hover.css](https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css).
 
-* [Bootstrap](https://bootstrap.com/) 
+* [Bootstrap](https://getbootstrap.com/) - A web framework that helps build fast and responsive sites, with responsive mobile-first tools.
 
-Code used from Bootstrap for footer and then edited to suit needs.
-
+* [JQuery](https://jquery.com/) - javascript library.
 
 * [Heorku](https://dashboard.heroku.com/)
 
-* [Github](https://github.com/)
+* [Github](https://github.com/) - Github is a provider of Internet hosting for software development and version control using Git.
 
-* [Gitpod](https://www.gitpod.io/)
+* [Gitpod](https://www.gitpod.io/) - Gitpod provides prebuilt, collaborative developer environments in your browser - powered by VS Code
 
-* [Pep8online](http://pep8online.com/)
+* [Pep8online](http://pep8online.com/) -To check your code for PEP8 requirements.
+
+* [Lighthouse](https://web.dev/) - Used to audit my site for performance.
+
+* [Am I Responsive](http://ami.responsivedesign.is/) - To demonstrate how my site will look on different screen sizes.
+
+
+
 
 
 ## Database
 
 ## In this project, I used the following to help build my website.
+
+* [Heroku Postgres](https://www.heroku.com/postgres) - PostgreSQL database management system.
+
+* [AmazonAWS](https://aws.amazon.com/) - database used for project development.
 
   
 
