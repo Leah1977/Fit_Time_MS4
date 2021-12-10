@@ -114,8 +114,9 @@ def edit_review(request, review_id):
             messages.success(request, "Successfully updated review!")
             return redirect(
                 reverse(
-                'product_detail',
-                 args=(review.product.id)))
+                        'product_detail',
+                        args=(review.product.id))
+                    )
         else:
             messages.error(request, 'Failed to edit review. \
                 Please ensure the form is valid')

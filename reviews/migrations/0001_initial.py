@@ -18,12 +18,26 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='ProductReview',
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                ('id', models.BigAutoField(
+                    auto_created=True, primary_key=True, serialize=False,
+                    verbose_name='ID')),
                 ('content', models.TextField(blank=True, null=True)),
-                ('rating', models.IntegerField(choices=[(1, '1'), (2, '2'), (3, '3'), (4, '4'), (5, '5')], default=0)),
+                ('rating', models.IntegerField(
+                    choices=[
+                        (1, '1'),
+                        (2, '2'),
+                        (3, '3'),
+                        (4, '4'),
+                        (5, '5')
+                    ],
+                    default=0)),
                 ('created_at', models.DateTimeField(auto_now_add=True)),
-                ('product', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='reviews', to='products.product')),
-                ('user', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='reviews', to=settings.AUTH_USER_MODEL)),
+                ('product', models.ForeignKey(
+                    on_delete=django.db.models.deletion.CASCADE,
+                    related_name='reviews', to='products.product')),
+                ('user', models.ForeignKey(
+                    on_delete=django.db.models.deletion.CASCADE,
+                    related_name='reviews', to=settings.AUTH_USER_MODEL)),
             ],
         ),
     ]
