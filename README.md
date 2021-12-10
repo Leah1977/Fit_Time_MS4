@@ -99,6 +99,10 @@ The app will resize according to the different screen sizes.
 
 * 404 page, which has a link back to the home page without using browser navigation.
 
+* 403 page, which has a link back to the home page without using browser navigation.
+
+* 500 page, which has a link back to the home page without using browser navigation.
+
 ## Home page
 
 The home page is made up of a logo "Fit Time"
@@ -585,7 +589,7 @@ This project was deployed to Heroku with the following steps:
 
 1.  Ensure your app has debug mode set to False when deploying.
 
-2.  Add a file called Procfile with no extension to your project directory and add web: python app.py
+2.  Add a file called Procfile with no extension to your project directory and add web: gunicorn Fit_Time_MS4.wsgi:application
 
 3.  Heroku can install dependencies from a requirements.txt or a Pipfile
 
@@ -603,14 +607,42 @@ This project was deployed to Heroku with the following steps:
 
 10. Go to the app settings on Heroku and click 'Reveal Config Vars'
 
-11. Add the required keys as they are in your local env.py (i.e. IP, PORT, SECRET_KEY, MONGO_URI, MONGO_DBNAME)
+11. In the resources tab add Heroku Postgres - select Hobby Dev - Free and add to your project.
 
-K
+12.  In the settings tab, open Reveal Config Vars and set the values to:
 
+| Key                     | Value                     |
+| ----------------------- | --------------------------|
+| AWS_ACCESS_KEY_ID       | Your AWS Access Key       |
+| AWS_SECRET_ACCESS_KEY   | Your AWS Secret Access Key|
+| DATABASE_URL            | Your Postgres Database URL|
+| EMAIL_HOST_PASS         | Your email password       |
+| EMAIL_HOST_USER         | Your email address        |
+| SECRET_KEY              | Your Secret Key           |
+| STRIPE_PUBLIC_KEY       | Your Stripe Public Key    |
+| STRIPE_SECRET_KEY       | Your Stripe Secret Key    |
+| STRIPE_WH_SECRET        | Your Stripe WH Key        |
+| USE_AWS                 | True                      |
+
+[Django Secret Key](https://miniwebtool.com/django-secret-key-generator/) was used to create secret key.
+
+13. Migrate the databases to the Postgres database using the following commands
+
+- heroku run python manage.py makemigrations --dry-run
+- heroku run python manage.py makemigrations 
+- heroku run python manage.py migrate --plan
+- heroku run python manage.py migrate
+
+14. Create a superuser for the Postgres database
+
+- heroku run python manage.py createsuperuser
+
+15. Add Heroku app URL in stripe as a new webhook endpoint.
 
 12. Go to the app Overview page and when the build is finished, click 'Open App.'
 
-  
+
+
 ### To clone this project into Gitpod, you should follow these steps.
 
   
@@ -624,17 +656,27 @@ K
 
 5. Navigate to the Project GitHub repository.
 
-6. Under the Repository Family_Favs, click download.
+6. Under the Repository Fit_Time_MS4, navigate to the code dropdown menu and Clone.
 
 7. This will trigger a new gitpod workspace that you can work on.
+
+### To Fork this repository, you should follow these steps.
+
+1. Log into GitHub
+
+2. Navigate to the Project GitHub repository.
+
+3. In the top right corner of the page, click "Fork".
 
 ### Acknowledgements
 
   
-Much thanks to my mentor Nishant Kumar for giving great support and encouragement throughout my third Milestone Project.
+Much thanks to my mentor Nishant Kumar for giving great support and encouragement throughout my fourth Milestone Project.
 
-Much thanks to Code Institute Tutors for pointing me in the right direction when I was going off course.  The support from the tutors
-was always excellent and their patience with me was much appreciated.
+Much thanks to Code Institute Tutors for pointing me in the right direction when I was going off course.  
+
+Once again, the support from the tutors
+was always excellent and their patience with me was much appreciated. 
 
 Thanks also to support from the Slack Community. 
 
