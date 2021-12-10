@@ -16,7 +16,6 @@ class StripeWH_Handler:
     def __init__(self, request):
         self.request = request
 
-    
     def _send_confirmation_email(self, order):
         """Send the user a confirmation email"""
         cust_email = order.email
@@ -69,10 +68,14 @@ class StripeWH_Handler:
             if save_info:
                 profile.default_phone_number = shipping_details.number,
                 profile.default_country = shipping_details.address.country,
-                profile.default_postcode = shipping_details.address.postal_code,
-                profile.default_town_or_city = shipping_details.address.town_or_city,
-                profile.default_street_address1 = shipping_details.address.line1,
-                profile.default_street_address2 = shipping_details.address.line2,
+                profile.default_postcode =
+                shipping_details.address.postal_code,
+                profile.default_town_or_city =
+                shipping_details.address.town_or_city,
+                profile.default_street_address1 =
+                shipping_details.address.line1,
+                profile.default_street_address2 =
+                shipping_details.address.line2,
                 profile.default_county = shipping_details.address.county,
                 profile.save()
 
@@ -88,7 +91,8 @@ class StripeWH_Handler:
                     phone_number__iexact=shipping_details.number,
                     country__iexact=shipping_details.address.country,
                     postcode__iexact=shipping_details.address.postal_code,
-                    town_or_city__iexact=shipping_details.address.town_or_city,
+                    town_or_city__iexact=shipping_details.address.town_or_city
+                    ,
                     street_address1__iexact=shipping_details.address.line1,
                     street_address2__iexact=shipping_details.address.line2,
                     county__iexact=shipping_details.address.county,
@@ -100,14 +104,13 @@ class StripeWH_Handler:
                 order_exists = True
                 break
             except Order.DoesNotExist:
-                attempt += 1
                 # allow to sleep for 1 second
+                attempt += 1
                 time.sleep(1)
         if order_exists:
             self._send_confirmation_email(order)
             return HttpResponse(
-            content=f'Webhook received: {event["type"]} | SUCCESS: Verified order already in database',
-            status=200)
+                content=f'Webhook received: {event["type"]} | SUCCESS: Verified \ order already in database', status=200)
         else:
             # If there is no order in the databse
             order = None
@@ -154,7 +157,8 @@ class StripeWH_Handler:
                     status=500)
         self._send_confirmation_email(order)
         return HttpResponse(
-            content=f'Webhook received: {event["type"]} | SUCCESS: Created order in webhook',
+            content=f'Webhook received: {event["type"]} | SUCCESS: /
+            Created order in webhook',
             status=200)
 
     def handle_payment_intent_payment_failed(self, event):
