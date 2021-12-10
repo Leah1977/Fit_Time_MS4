@@ -130,13 +130,52 @@ This page will allow the player to sign up for further information on updates fo
 
 The sign-up form is to register with our site to be notified of updates.
 
+## Products
+
+This page will display the products available to purchase.  Users can scroll through the products with an all products section.
+Users can also opt to narrow down the view to different sections.
+
+There is a search option for users to enter a particular item to search.
+
+## Product Details
+
+Users can click on an image and view the product on it's own page.
+Here they can view a large image and some purchasing options.
+Users can select quantity etc and add to shopping bag.
+
+## Review
+
+Users can leave a review on an item and can also view other users reviews.
+Logged in users can edit/delete their own review.
+
+## Contact 
+
+Users can navigate to the contact page.  Here they can find details of our location with Google maps.
+They can see our address and contact information.
+
+Users will also have the option to leave a message with the contact us form.
+
+## Profiles
+
+Users can create a profile page.
+
 # UX
 
 ## Skeleton:
 
 ### I have used Balsamique to draw up 3-page wireframes for Mobile, iPad and Desktop.
  
-### Click here for a link to the Wireframes [Balsamique FamilyFavs](static/images/fit_time_wireframes.pdf)
+### Click here for a link to the Wireframes [Balsamique FitTime](static/images/fit_time_wireframes.pdf)
+
+## Database Schema
+
+I used dbdiagrams to build a database schema for this project
+
+### Click here for a link to the database schema [Fit Time Database Schema](media/readmeimages/databaseschema.png)
+
+![dbdiagrams](https://dbdiagram.io/home)
+
+
 
 ## Project Goals.
 
@@ -266,6 +305,9 @@ As a designer, I would expect
 
 
 With these user stories in mind, I put together some wireframes.  I included all the primary requirements and issues that were raised from my user story research.
+I created an excel page to view the user stories for testing.
+
+![userstories](media/readmeimages/Userstories.png)
 
 
 ## Scope
@@ -293,11 +335,13 @@ With these user stories in mind, I put together some wireframes.  I included all
 
 * I would like to add a blog section for users to add tried and tested products from the website.
 
-#### This project will include four separate pages to be available to all users.
+#### This project will include 7 separate pages to be available to all users.
 
 * Home page
 * Products page
 * Classes page
+* Reviews page
+* Contact page
 * Registration Form
 * Sign In Form
 
@@ -338,17 +382,17 @@ I used [Coolers](http://www.coolers.co) to generate my colours for the project. 
 
 * Roboto
 
-![Raleway Font](static/images/readme_images/RalewayFont.png)
+![Oswald Font](media/readmeimages/oswaldfont.png)
 
-The Raleway font is used for primary headings and paragraphs throughout the project.
+The Oswald font is used for primary headings and paragraphs throughout the project.
 
-* Lobster  
+* Abril Fatface 
 
-![Lobster Font](static/images/readme_images/lobsterFont.png)
+![Abril Fatface Font](media/readmeimages/abrilfatfacefont.png)
 
-I chose this font for the main app title.
+I chose this font for the main app logo.
 
-I also used this for some main headings throughout the site.
+I also used this for the special offer banner.
 
 * Sans Serif will be used as a backup.
 
@@ -527,12 +571,7 @@ This project was deployed to Heroku with the following steps:
 
 11. Add the required keys as they are in your local env.py (i.e. IP, PORT, SECRET_KEY, MONGO_URI, MONGO_DBNAME)
 
-Key Value
-DEBUG FALSE
-IP  0.0.0.0
-MONGO_URI mongodb+srv://<username>:<password>@<cluster_name>-qtxun.mongodb.net/<database_name>?retryWrites=true&w=majority
-PORT  5000
-SECRET_KEY  <your_secret_key>
+K
 
 
 12. Go to the app Overview page and when the build is finished, click 'Open App.'
