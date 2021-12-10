@@ -88,7 +88,8 @@ def adjust_basket(request, item_id):
             if not basket[item_id]['items_by_size']:
                 basket.pop(item_id)
             messages.success(
-                request, f'Removed size {size.upper()} {product.name} from your basket'
+                request,
+                f'Removed size {size.upper()} {product.name} from your basket'
             )
     else:
         if quantity > 0:
