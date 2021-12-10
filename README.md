@@ -688,6 +688,15 @@ Thanks also to my husband and family for supporting me through this project and 
 
 This project is for educational purposes only.
 
+# Notes
+
+During the development of this project.  Gitpod did an update - this in turn added many preinstalled dependencies.
+To counteract this I was advised by tutor support to run the following commands when I restart my workspace. 
+1. run pip3 uninstall -y -r deps.txt
+2. run pip3 install -r requirements.txt
+
+This allows my requirements.txt to stay relevant for my project workspace.
+
 ### End of README
 
 [Return to Table of Contents](#table-of-contents)
