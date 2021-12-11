@@ -75,7 +75,7 @@
                 <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                     <ul class="list-inline list-unstyled text-center text-lg-right my-0">
                         <li class="list-inline-item dropdown">
-                            <a href="#" class="text-white nav-link" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a href="#" class="text-black nav-link" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <div class="text-center">
                                     <div><i class="fas fa-user fa-lg"></i></div>
                                     <p class="my-0 icon-label">My Account</p>
@@ -114,7 +114,7 @@
                 <div class="col-12 col-lg-4 my-auto py-1 py-lg-0"></div>
             </div>
             <div class="row">
-                <nav class="navbar navbar-expand-lg navbar-light w-100">
+                <nav class="navbar navbar-expand-lg navbar-light w-100 bg-white">
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -124,13 +124,13 @@
             </div>
             <!-- delivery banner -->
             <div id="shipping-banner" class="row text-center">
-                <div class="col bg-white text-black">
+                <div class="col text-black">
                     <h4 class="my-1">Free shipping on orders over €{{ free_shipping_threshold }}</h4>
                 </div>
             </div> 
             <!-- special offer banner -->
             <div id = "special-offer-banner" class="row text-center">
-                <div class="col bg-black text-white text-info">
+                <div class="col text-info">
                     <a href="{% url 'products' %}" class="col-12 my-1">
                         <h3 class="my-1 banner-info">
                             Check Out Today's Top Offers!
