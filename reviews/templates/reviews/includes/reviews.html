@@ -3,60 +3,94 @@
 
 <!-- cover up the background image -->
 <div class="overlay"></div>
-    <!-- Reviews container -->
-    <div class="container reviews-container mt-1 mb-1">
-        <div class="row">
-            <div class="col">
-                <h5>Latest Reviews</h5>
-                    <p>Read through some of our reviews.</p>
-            </div>
-            <div class="col-12 col-md-6 reviews">
-                <div class="row">
-                    <div class="read-review mt-1">
-                        <h3>Customer Review</h3>
-                    </div>
+<!-- Reviews container -->
+<div class="container reviews-container mt-1 mb-1">
+    <div class="row">
+        <div class="col-12">
+            <h5>Latest Reviews</h5>
+                <p>Read through some of our reviews.</p>
+        </div>
+        <div class="col-12 reviews">
+            <div class="row">
+                <div class="read-review mt-1">
+                    <h3>Customer Review</h3>
                 </div>
-                <!-- Accordian for reviews -->
-                <div class="review-accordion" id="accordian-r">
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="review-title">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                          View Review
-                        </button>
-                      </h2>
-                      <div id="collapseOne" class="accordion-collapse collapse  show" aria-labelledby="headingOne" data-bs-parent="accordian-r">
-                            <div class="accordion-body">
-                                {% if reviews %}
-                                    {% for review in reviews %} 
-                                        <h4><strong>{{ review.title }}</strong>
-                                        {{ review.comment }}
-                                        </h4>
-                                    {% endfor %}
-                                {% endif %}            
-                            </div>
+            </div>
+            <!-- Accordian for reviews -->
+            <div class="review-accordion" id="accordian-r">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="review-title">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        View Review
+                    </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse  show" aria-labelledby="headingOne" data-bs-parent="accordian-r">
+                        <div class="accordion-body">
+                            {% if reviews %}
+                                {% for review in reviews %} 
+                                    <h4><strong>{{ review.title }}</strong>
+                                    {{ review.comment }}
+                                    </h4>
+                                {% endfor %}
+                            {% endif %}            
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    {% if reviews %}
-        {% for review in reviews %}
-            <h4 class="text-uppercase">{{ review.title }}</h4>
-            <hr>
-            {% if request.user.is_authenticated %}
-                {% if request.user|lower == review.user|lower %}
-                    <div>
-                        <a href="{% url 'edit_review' review.id %}">Edit Review</a>
-                    </div>
-                    <div>
-                        <a href="{% url 'delete_review' review.id %}" class="text-danger">Delete Review</a>
-                    </div>
-                {% endif %}
+</div>
+{% if reviews %}
+    {% for review in reviews %}
+        <h4 class="text-uppercase">{{ review.title }}</h4>
+        <hr>
+        {% if request.user.is_authenticated %}
+            {% if request.user|lower == review.user|lower %}
+                <div>
+                    <a href="{% url 'edit_review' review.id %}">Edit Review</a>
+                </div>
+                <div>
+                    <a href="{% url 'delete_review' review.id %}" class="text-danger">Delete Review</a>
+                </div>
             {% endif %}
-        {% endfor %}
-    {% else %}
-        <h4 class="no-reviews">No reviews</h4>            
-    {% endif %}
-
+        {% endif %}
+    {% endfor %}
+{% else %}
+    <h4 class="no-reviews">No reviews</h4>            
+{% endif %}
+<!-- Add a review -->
+<!-- link for product review -->
+<div class="reviews-wrapper">
+<div class="review text-black">
+    <h4>Write a review</h4>
+</div>
+<hr>
+<div class="row">
+    <div class="col">
+        <form action="{% url 'add_review' product.id %}" class="form" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form|crispy }}
+            <span>
+                <button class="btn btn-black rounded-1 mt-4 mr-4" type="submit">
+                    Leave a review
+                </button>
+            </span>
+            <span>
+                <a href="{% url 'product_detail' product.id%}" class="btn btn-danger mt-4 mr-4">Cancel</a>
+            </span>
+        </form>
+    </div>
+</div>
+{% for review in reviews %}
+    <div>
+        <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.review }} / 5</small>
+        {% if request.user.is_authenticated %}
+            <small class="ml-3">
+                <a href="{% url 'edit_review' product.id %}">Edit</a>
+                <a href="{% url 'delete_review' review.id %}" class="text-danger">Delete</a>
+            </small>
+        {% endif %}
+    </div>
+    {% endfor %}
+</div>
 {% endblock %}
