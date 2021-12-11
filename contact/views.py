@@ -10,7 +10,7 @@ def contact(request):
 def add_contact_message(request):
     """ Create a message to send to store owner  """
     if request.method == 'POST':
-        form = ContactForm(request.POST, request.FILES)
+        form = ContactForm(request.POST)
         if form.is_valid():
             message = form.save()
             messages.success(request, "Successfully added message!")
