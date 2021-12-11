@@ -9,7 +9,36 @@
                 <p>Read through some of our reviews below.</p>
         </div>
         <div class="col-12 reviews">
-            <div class="row">
+            {% if reviews %}
+                <div class="table-responsive rounded">
+                    <table class="table table-sm table-border">
+                        <thead class="text-black">
+                            <tr>
+                                <th scope="col">Product</th>
+                                <th scope="col">Review</th>
+                            </tr>
+                        </thead>
+                    
+                        {% for review in reviews %}
+                            <tr>
+                                <td class="p-3 w-25">
+                                    <p class="my-0">{{ item.product.name }}</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 w-25">
+                                    <p class="my-0">{{ item.review }}</p>
+                                </td>
+                            </tr>
+                        {% endfor %}
+                    </table>
+                {% else %}
+                    <p>No Reviews</p>
+            {% endif %}
+
+
+
+                </table>
                 <div class="read-review mt-1">
                     <h3>Customer Review</h3>
                 </div>
