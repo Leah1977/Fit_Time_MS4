@@ -12,17 +12,17 @@
 {% block content%}
     <div class="overlay"></div>
     <!-- 404 error -->
-    <div class="container container-fluid">
+    <div class="container justify-content-center">
         <div class="row">
             <div class="col-12 col-md-6 my-auto">
                 <h1 class="display-4 text-white">
                    404 Error - Page not found
                 </h1>
-                <h4 class="text-center">
+                <p class="text-center">
                     Sorry the page you requested could not be found.
-                </h4>
+                </p>
                 <br>
-                <a href="{% url 'home' %}" class="btn btn-lg rounded-4 text-uppercase py-3 text-white">Click here to return Home</a>
+                <a href="{% url 'home' %}" class="btn btn-lg rounded-4 text-uppercase py-3 text-black">Click here to return Home</a>
             </div>
         </div>
     </div>
