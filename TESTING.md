@@ -97,4 +97,20 @@ I have tested all links on all pages. All links work as intended. This allows th
 
 ## No Image not loading
 
+
+
+
+## Syntax Error in Basket
+
+When I tried to open the app.  I got and Error 500
+I then reset my config vars to DEVELOPMENT = True so I could see where the error was coming from.
+
+The error pointed to a syntax error in my basket app.
+
+!(SyntaxError)[media/testingimages/syntax_error_basket.png]
+
+Fixed error by finding missing { and inserting it where necessary
+
+Removed DEVELOPMENT = True from Config Vars
+
 [Return to Table of Contents](#table-of-contents)
