@@ -22,12 +22,12 @@
                         {% for review in reviews %}
                             <tr>
                                 <td class="p-3 w-25">
-                                    <p class="my-0">{{ item.product.name }}</p>
+                                    <p class="my-0">{{ review.title }}</p>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="p-3 w-25">
-                                    <p class="my-0">{{ item.review }}</p>
+                                    <p class="my-0">{{ review.comment }}</p>
                                 </td>
                             </tr>
                         {% endfor %}
@@ -35,13 +35,12 @@
                 {% else %}
                     <p>No Reviews</p>
             {% endif %}
+        </div>
+    </div>
+</div>
 
-
-
-                </table>
-                <div class="read-review mt-1">
+            <div class="read-review mt-1">
                     <h3>Customer Review</h3>
-                </div>
             </div>
             <!-- Accordian for reviews -->
             <div class="review-accordion" id="accordian-r">
