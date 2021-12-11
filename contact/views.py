@@ -6,6 +6,7 @@ def contact(request):
 
     return render(request, 'contact/contact.html')
 
+
 def add_contact_message(request):
     """ Create a message to send to store owner  """
     if request.method == 'POST':

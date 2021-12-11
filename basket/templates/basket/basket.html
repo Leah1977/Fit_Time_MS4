@@ -96,28 +96,28 @@
                                     <td class="py-3 w-30">
                                         <!-- quantity form -->
                                         {% include "basket/quantity_form.html" %}
-                                </td>
-                                <td class="py-3">
-                                    <p class="my-0">
-                                        €{{ item.product.price | calc_subtotal:item.
-                                        quantity }}
-                                    </p>
+                                    </td>
+                                    <td class="py-3">
+                                        <p class="my-0">
+                                            €{{ item.product.price | calc_subtotal:item.
+                                            quantity }}
+                                        </p>
+                                    </td>
+                                </tr>
+                            {% endfor %}
+                            <hr>
+                            <tr>
+                                <td colspan="5" class="pt-5 text-right">
+                                    <!-- basket total -->
+                                    {% include "basket/basket_total.html" %}
                                 </td>
                             </tr>
-                        {% endfor %}
-                        <hr>
-                        <tr>
-                            <td colspan="5" class="pt-5 text-right">
-                                <!-- basket total -->
-                                {% include "basket/basket_total.html" %}
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="5" class="text-right">
-                                <!-- product information -->
-                                {% include "basket/checkout_buttons.html" %}
-                            </td>
-                        </tr>
+                            <tr>
+                                <td colspan="5" class="text-right">
+                                    <!-- product information -->
+                                    {% include "basket/checkout_buttons.html" %}
+                                </td>
+                            </tr>
                         </table>
                     </div>
                 {% else %}
@@ -129,10 +129,10 @@
                         </span>
                         <span class="text-uppercase">Continue Shopping</span>
                     </a>
-            {% endif %}
+                {% endif %}
+            </div>
         </div>
     </div>
-</div>
 {% endblock %}
 
 {% block postloadjs %}
