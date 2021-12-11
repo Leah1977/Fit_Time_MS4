@@ -12,7 +12,7 @@
 {% block content %}
 <!-- cover up the background image -->
 <div class="overlay"></div>
-    <div class="container-fluid">
+    <div class="container-fluid products-container">
         <div class="row">
             <div class="col text-center mt-3">
                 <h2 class="logo-font">Products</h2>
@@ -65,7 +65,7 @@
                                     </a>
                                     {% else %}
                                     <a href="{% url 'product_detail' product.id %}">
-                                        <img src="{{ MEDIA_URL }}media/noimage.jpg.jpg" class="card-img-top img-fluid" alt="{{ product.name }}">
+                                        <img src="{{ MEDIA_URL }}media/noimage.jpg" class="card-img-top img-fluid" alt="{{ product.name }}">
                                     </a>
                                     {% endif %}
                                     <div class="card-body pb-2 text-black">
