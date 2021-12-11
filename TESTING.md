@@ -98,7 +98,9 @@ I have tested all links on all pages. All links work as intended. This allows th
 ## No Image not loading
 
 
+## Line length too long
 
+Correct all issues with line length.  Run python3 -m flake8 and improve code formatting.
 
 ## Syntax Error in Basket
 
