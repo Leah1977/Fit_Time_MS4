@@ -8,59 +8,6 @@ from products.models import Product
 from profiles.models import UserProfile
 
 
-# # A view to render the all reviews template
-# def all_reviews(request):
-#     """ A view to show all reviews """
-
-#     reviews = Review.objects.all()
-#     direction = None
-
-#     context = {
-#         'reviews': reviews,
-#         'search_term': query,
-#         'current_categories': categories,
-#         'current_sorting': current_sorting,
-#     }
-
-#     reviews = Review.objects.filter(user=request.user).order_by('-id')
-
-#     return render(request, 'user/reviews.html', {'reviews': reviews})
-
-
-# # A view to render the product detail template
-# def product_detail(request, product_id):
-#     """ A view to show individual product details """
-
-#     product = get_object_or_404(Product, pk=product_id)
-
-#     context = {
-#         'product': product,
-#     }
-
-#     return render(request, 'products/product_detail.html', context)
-
-
-# A view to render the add review template
-
-# if request.method == 'POST':
-#     form = ProductForm(request.POST, request.FILES)
-#     if form.is_valid():
-#         product = form.save()
-#         messages.success(request, "Successfully added product!")
-#         return redirect(reverse('product_detail', args=[product.id]))
-#     else:
-#         messages.error(request, 'Failed to add product. \
-#             Please ensure the form is valid')
-# else:
-#     form = ProductForm()
-
-# template = 'products/add_product.html'
-# context = {
-#     'form': form,
-# }
-
-# return render(request, template, context)
-
 @login_required
 def add_review(request, product_id):
     """ Add a review to a product """

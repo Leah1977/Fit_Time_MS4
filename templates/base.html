@@ -52,7 +52,7 @@
             <div id="logonav" class="row bg-white pt-lg-1 d-none d-lg-flex">
                 <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
                     <a href="{% url 'home' %}" class="nav-link main-logo-link">
-                        <h2 class="logo-font text-white my-0"><strong>Fit Time</strong>
+                        <h2 class="logo-font my-0"><strong>Fit Time</strong>
                         </h2>
                     </a>
                 </div>
@@ -95,7 +95,7 @@
                             </div>
                         </li>
                         <li class="list-inline-item">
-                            <a href="{% url 'view_basket' %}" class="{% if grand_total %} text-info font-weight-bold{% else %} text-white{% endif %} nav-link">
+                            <a href="{% url 'view_basket' %}" class="{% if grand_total %} text-info font-weight-bold{% else %} text-black{% endif %} nav-link">
                                 <div class="text-center">
                                     <div><i class="fas fa-shopping-bag fa-lg"></i></div>
                                     <p class="my-0 icon-label">
