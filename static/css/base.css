@@ -33,7 +33,6 @@ hr {
 
 .logo-font {
     text-transform: uppercase;
-    text-shadow: 5px 3px #222;
     font-family: 'Oswald', sans-serif;
     color: #091479;
     font-size: 2rem;
@@ -220,7 +219,7 @@ input[name='q']::placeholder {
 
 /* ---------------------------------------------------- Forms */
 
-.contact-form {
+#contact-form {
     padding: 40px;
 }
 

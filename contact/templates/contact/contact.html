@@ -35,15 +35,14 @@
     </div>
 <!-- Contact Form -->
 <!-- Form to Add a message -->
-    <div class="row contact-us">
-        <h2 class="text-center logo-font contact-title pt-4">
-            Send Us A Message:
-        <h2>
-        <div class="row">
-            <div class="col"></div>
+    <div class="row">
+        <div class="col-12 text-center">
+            <h2 class="contact-title">
+                Send Us A Message:
+            <h2>
         </div>
         <div class="container-fluid mt-1" id="contact-form">
-            <div class="col text-center mt-3">
+            <div class="col-12 mt-3">
                 <form action="{% url 'contact' %}" class="form mb-2" method="POST" enctype="multipart/form-data">
                     {% csrf_token %}
                     {{ contact_form | crispy }}

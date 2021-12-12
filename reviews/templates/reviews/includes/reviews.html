@@ -32,14 +32,12 @@
                     </table>
                 </div>
             {% else %}
-                <p class = "pt-2 text-center logo-font">No Reviews</p>
+                <p class = "pt-2 text-center logo-font">No reviews Yet!</p>
             {% endif %}
-            
         </div>
     </div>
 </div>
 
-      
 {% if reviews %}
     {% for review in reviews %}
         <h4 class="text-uppercase text-center">{{ review.title }}</h4>
@@ -61,7 +59,7 @@
 <!-- link for product review -->
 <div class="reviews-wrapper">
     <div class="review text-black text-center">
-        <a href="{ url 'add_review' product.id %}" class="btn btn-black mt-4">Add a review</a>
+        <a href="{% url 'add_review' product.id %}" class="btn btn-black mt-4">Add a review</a>
     </div>
 </div>
 {% endblock %}
