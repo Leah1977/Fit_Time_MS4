@@ -16,24 +16,44 @@
                             <tr>
                                 <th scope="col">Product</th>
                                 <th scope="col">Review</th>
+                                <th scope="col"></th>
+                                <th scope="col"></th>
                             </tr>
                         </thead>
                     
                         {% for review in reviews %}
-                            <tr>
-                                <td class="p-3 w-25">
-                                    <p class="my-0">{{ review.title }}</p>
-                                </td>
-                                <td class="p-3 w-75">
-                                    <p class="my-0">{{ review.comment }}</p>
-                                </td>
-                            </tr>
+                            <h4 class="text-uppercase text-center">{{ review.title }}</h4>
+                                {% if request.user.is_authenticated %}
+                                    {% if request.user|lower == review.user|lower %}
+                                        <tr>
+                                            <td class="p-3 w-25">
+                                                <p class="my-0">{{ review.title }}</p>
+                                            </td>
+                                            <td class="p-3 w-55">
+                                                <p class="my-0">{{ review.comment }}</p>
+                                            </td>
+                                            <td class="p-3 w-10">
+                                                <a href="{% url 'edit_review' review.id %}">Edit Review</a>
+                                            </td>
+                                            <td class="p-3 w-10">
+                                                <a href="{% url 'delete_review' review.id %}" class="text-danger">Delete Review</a>
+                                            </td>
+                                        </tr>
+                                    {% endif %}
+                                {% endif %}
                         {% endfor %}
                     </table>
                 </div>
             {% else %}
                 <p class = "pt-2 text-center logo-font">No reviews Yet!</p>
             {% endif %}
+            <!-- Add a review -->
+            <!-- link for product review -->
+            <div class="reviews-wrapper">
+                <div class="review text-black text-center">
+                    <a href="{% url 'add_review' product.id %}" class="btn btn-black mt-4">Add a review</a>
+                </div>
+            </div>
         </div>
     </div>
 </div>
