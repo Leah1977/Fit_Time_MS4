@@ -69,7 +69,7 @@ def edit_review(request, review_id):
                 Please ensure the form is valid')
     else:
         form = ReviewForm(instance=review)
-        messages.info(request, f'You are editing review for {product.name}')
+        messages.info(request, f'You are editing review for {{ product.name }}')
 
     template = 'reviews/edit_review.html'
     context = {
