@@ -8,7 +8,6 @@ body {
     background: url('/media/homepage_background.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
-    overflow-x: hidden;
     color: #fafafa;
     font-family: 'Oswald', sans-serif; 
 }
@@ -232,7 +231,7 @@ input[name='q']::placeholder {
 /* --------------------------------------------------------------- Footer */
 
 .footer-container {
-    padding-top: 20px;
+    padding-top: 10px;
     background-color: black;
 }
 
@@ -282,7 +281,7 @@ input[name='q']::placeholder {
     }
 
     .footer-container {
-        padding-bottom: 20px;
+        padding-bottom: 10px;
     }
 
     .logo-font {
