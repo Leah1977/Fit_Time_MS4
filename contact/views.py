@@ -11,10 +11,10 @@ def contact(request):
     }
 
     if request.method == 'POST':
-        form = contact_form(data=request.POST)
+        form = contactForm(data=request.POST)
 
         if form.is_valid():
-            name = request.POST.get('name','')
+            name = request.POST.get('name', '')
             title = request.POST.get('title', '')
             email = request.POST.get('email', '')
             message = request.POST.get('message', '')

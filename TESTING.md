@@ -168,6 +168,10 @@ Removed DEVELOPMENT = True from Config Vars
 
 ## Scrolling error with Footer
 
+Text was scrolling behind footer.  This meant the user couldn't see the buttons for checking
+out or submitting.
+
+Removed the fixed bottom option from the header and this resolved the issue.
 
 
 [Return to Table of Contents](#table-of-contents)
