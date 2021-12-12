@@ -32,7 +32,7 @@
                     </table>
                 </div>
             {% else %}
-                <p>No Reviews</p>
+                <p class = "pt-2 text-center logo-font">No Reviews</p>
             {% endif %}
             
         </div>
@@ -42,7 +42,7 @@
       
 {% if reviews %}
     {% for review in reviews %}
-        <h4 class="text-uppercase">{{ review.title }}</h4>
+        <h4 class="text-uppercase text-center">{{ review.title }}</h4>
         {% if request.user.is_authenticated %}
             {% if request.user|lower == review.user|lower %}
                 <div>
@@ -55,12 +55,12 @@
         {% endif %}
     {% endfor %}
 {% else %}
-    <h4 class="no-reviews">No reviews</h4>            
+    <h4 class="no-reviews text-center">No reviews</h4>            
 {% endif %}
 <!-- Add a review -->
 <!-- link for product review -->
 <div class="reviews-wrapper">
-    <div class="review text-black">
+    <div class="review text-black text-center">
         <a href="{ url 'add_review' product.id %}" class="btn btn-black mt-4">Add a review</a>
     </div>
 </div>

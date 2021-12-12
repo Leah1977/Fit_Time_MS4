@@ -89,6 +89,33 @@ I have tested all links on all pages. All links work as intended. This allows th
 
 ## 500 Error
 
+Had a lot of trouble with Internal Server issues
+
+![]()
+![Error 500](media/testingimages/error_500.png)
+
+
+I was getting an issue telling me that my products didnt' exist.
+![Products Issue](media/testingimages/Screenshot 2021-12-07 104951.png)
+
+I thought this was an error due to my database, but with help from tutor support, 
+I realised I had renamed the images and they no longer matched the database.
+![Renamed images in media folder](media/testingimages/Screenshot 2021-12-07 132726.png)
+
+I fixed this error and made sure the image names match with my Amazon S3 media file so that they could be called correctly.
+![AmazonS3](media/testingimages/Screenshot 2021-12-07 132812.png)
+
+I updated the media folders through Admin
+![DjangoAdmin](media/testingimages/Screenshot 2021-12-07 134912.png)
+
+Once they were the same, the images could now display correctly
+![AmazonS3](media/testingimages/Screenshot 2021-12-07 135319.png)
+
+Product Images displaying correctly
+![ProductImages](media/testingimages/ProductImages.png)
+
+
+
 ## Contact page error
 
 ## Nutrition Icon missing
