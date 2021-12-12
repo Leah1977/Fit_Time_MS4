@@ -10,21 +10,20 @@
         </div>
         <div class="col-12 reviews">
             {% if reviews %}
-                <div class="table-responsive rounded">
-                    <table class="table table-sm table-border">
-                        <thead class="text-black">
-                            <tr>
-                                <th scope="col">Product</th>
-                                <th scope="col">Review</th>
-                                <th scope="col"></th>
-                                <th scope="col"></th>
-                            </tr>
-                        </thead>
-                    
-                        {% for review in reviews %}
-                            <h4 class="text-uppercase text-center">{{ review.title }}</h4>
-                                {% if request.user.is_authenticated %}
-                                    {% if request.user|lower == review.user|lower %}
+                {% for review in reviews %}
+                    <h4 class="text-uppercase text-center">{{ review.title }}</h4>
+                    {% if request.user.is_authenticated %}
+                        {% if request.user|lower == review.user|lower %}
+                            <div class="table-responsive rounded">
+                                <table class="table table-sm table-border">
+                                    <thead class="text-black">
+                                        <tr>
+                                            <th scope="col">Product</th>
+                                            <th scope="col">Review</th>
+                                            <th scope="col"></th>
+                                            <th scope="col"></th>
+                                        </tr>
+                                    </thead>
                                         <tr>
                                             <td class="p-3 w-25">
                                                 <p class="my-0">{{ review.title }}</p>
@@ -39,47 +38,22 @@
                                                 <a href="{% url 'delete_review' review.id %}" class="text-danger">Delete Review</a>
                                             </td>
                                         </tr>
-                                    {% endif %}
-                                {% endif %}
-                        {% endfor %}
-                    </table>
-                </div>
-            {% else %}
-                <p class = "pt-2 text-center logo-font">No reviews Yet!</p>
-            {% endif %}
-            <!-- Add a review -->
-            <!-- link for product review -->
-            <div class="reviews-wrapper">
-                <div class="review text-black text-center">
-                    <a href="{% url 'add_review' product.id %}" class="btn btn-black mt-4">Add a review</a>
-                </div>
+                                    </table>
+                                </div>
+                            {% endif %}
+                        {% endif %}
+                    {% endfor %}
+                {% else %}
+                    <p class = "pt-2 text-center logo-font">No reviews Yet!</p>
+                {% endif %}
             </div>
         </div>
     </div>
-</div>
-
-{% if reviews %}
-    {% for review in reviews %}
-        <h4 class="text-uppercase text-center">{{ review.title }}</h4>
-        {% if request.user.is_authenticated %}
-            {% if request.user|lower == review.user|lower %}
-                <div>
-                    <a href="{% url 'edit_review' review.id %}">Edit Review</a>
-                </div>
-                <div>
-                    <a href="{% url 'delete_review' review.id %}" class="text-danger">Delete Review</a>
-                </div>
-            {% endif %}
-        {% endif %}
-    {% endfor %}
-{% else %}
-    <h4 class="no-reviews text-center">No reviews</h4>            
-{% endif %}
-<!-- Add a review -->
-<!-- link for product review -->
-<div class="reviews-wrapper">
-    <div class="review text-black text-center">
-        <a href="{% url 'add_review' product.id %}" class="btn btn-black mt-4">Add a review</a>
+    <!-- Add a review -->
+    <!-- link for product review -->
+    <div class="reviews-wrapper">
+        <div class="review text-black text-center">
+            <a href="{% url 'add_review' product.id %}" class="btn btn-black mt-4">Add a review</a>
+        </div>
     </div>
-</div>
 {% endblock %}
