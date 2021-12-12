@@ -62,7 +62,7 @@ def edit_review(request, review_id):
             return redirect(
                 reverse(
                         'product_detail',
-                        args=(review.product.id))
+                        args=(review.product.id,))
                     )
         else:
             messages.error(request, 'Failed to edit review. \
