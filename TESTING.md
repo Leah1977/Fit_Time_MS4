@@ -84,7 +84,11 @@ I have tested all links on all pages. All links work as intended. This allows th
 Shopping basket not opening
 
 Missing endfor tag in template
-Added in correct endfor tag.
+This was an indentation error.
+Went back through all the code and corrected indentation for endfor tag.
+Also corrected spelling error for basket.
+![BasketError](media/testingimages/syntax_error_basket.png)
+
 
 ## Favicon issue
 
