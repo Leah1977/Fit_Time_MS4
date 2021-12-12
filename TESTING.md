@@ -87,7 +87,7 @@ Missing endfor tag in template
 This was an indentation error.
 Went back through all the code and corrected indentation for endfor tag.
 Also corrected spelling error for basket.
-![BasketError](media/testingimages/syntax_error_basket.png)
+![BasketError](media/testingimages/blocktagmissing.png)
 
 
 ## Favicon issue
