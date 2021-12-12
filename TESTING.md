@@ -97,6 +97,17 @@ Since my last project, adding the favicon required a few different steps.
 Solved this error by going through the steps with 
 favicon generator.
 
+And including the following tags
+
+```
+<!-- Favicon -->
+            <link rel="apple-touch-icon" sizes="180x180" href="{% static 'favicon/apple-touch-icon.png' %}">
+            <link rel="icon" type="image/png" sizes="32x32" href="{% static 'favicon/favicon-32x32.png' %}">
+            <link rel="icon" type="image/png" sizes="16x16" href="{% static 'favicon/favicon-16x16.png' %}">
+            <link rel="manifest" href="{% static 'favicon/site.webmanifest' %}">
+```
+
+
 ## Add Review Error
 
 ## 500 Error
@@ -153,5 +164,10 @@ The error pointed to a syntax error in my basket app.
 Fixed error by finding missing { and inserting it where necessary
 
 Removed DEVELOPMENT = True from Config Vars
+
+
+## Scrolling error with Footer
+
+
 
 [Return to Table of Contents](#table-of-contents)

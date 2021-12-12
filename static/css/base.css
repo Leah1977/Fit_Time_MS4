@@ -34,7 +34,7 @@ hr {
 .logo-font {
     text-transform: uppercase;
     text-shadow: 5px 3px #222;
-    font-family: 'Abril Fatface', cursive;
+    font-family: 'Oswald', sans-serif;
     color: #091479;
 }
 
@@ -342,7 +342,7 @@ input[name='q']::placeholder {
 
     .display-4.main-message-font.text-white {
         font-size: 5rem;
-        font-family: 'Abril Fatface';
+        font-family: 'Abril Fatface', sans-serif;
     }
 
     .main-message {
