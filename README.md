@@ -76,7 +76,7 @@ This app is aimed at anyone want to make time for themselves for overall health 
 ### Here is a demonstrating of how my web app looks on different screen sizes using [Am I Responsive Website](http://ami.responsivedesign.is/)
 
  
-![Am I responsive](static/images/amiresponsive.png)
+![Am I responsive](media/readmeimages/amiresponsive.png)
 
 The app will resize according to the different screen sizes.
 
@@ -397,7 +397,7 @@ I created an excel page to view the user stories for testing.
 ### I will use the colours in the main body, header and footer
 
 
-![Color Scheme](static/images/readme_images/colours.png)
+![Color Scheme](media/readmeimages/colours.png)
 
 My primary colours will be blue, black and white.  I will use variations of these colours to add designs that stand out and appeal to the user.
 
@@ -675,12 +675,13 @@ This project was deployed to Heroku with the following steps:
   
 Much thanks to my mentor Nishant Kumar for giving great support and encouragement throughout my fourth Milestone Project.
 
-Much thanks to Code Institute Tutors for pointing me in the right direction when I was going off course.  
+Much thanks to Code Institute Tutors for pointing me in the right direction when I was going off course.
+Once again, the support from the tutors was always excellent and their patience with me was much appreciated. 
+Thanks so much Igor and all the tutors over the year.  
 
-Once again, the support from the tutors
-was always excellent and their patience with me was much appreciated. 
 
-Thanks also to support from the Slack Community. 
+Thanks also to the support from the Slack Community.  I only got used to using this resource towards the end, when I realised
+how invaluable it is to the learning. 
 
 Thanks also to my husband and family for supporting me through this project and providing invaluable feedback.
 

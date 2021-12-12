@@ -11,7 +11,6 @@
 7.  [Project Testing](#deployed-testing)
     - [Links](#links)
     - [Overlay](#overlay)
-    - [Modal](#modal)
     - [Sign-up Form](#form)
 8.  [User Stories](#user-stories)
     - [User Story 1](#user-story-1)
@@ -173,5 +172,109 @@ out or submitting.
 
 Removed the fixed bottom option from the header and this resolved the issue.
 
+## User Story Testing
 
+## User Story 1
+
+  
+### What do I expect to find on a sports app?
+
+1. I expect to be able to navigate around the app with ease.
+
+2. I expect to be able to search for items to buy.
+
+3. I would expect the app to be visually appealing.
+
+5. I would like to be able to edit my shopping bag.
+
+6. I would like the site to be informative.
+
+
+## User Story 2
+
+  As a website user, I want the app to be easy to use.  I would expect to be able to register and for my details to be secure and safe.
+
+### What do I expect to find on a web application?
+
+  
+
+1. Can I view my shopping bag?
+
+2. Can I edit my shopping bag?
+
+3. Can I delete items from my shopping bag?
+
+  
+
+## User Story 3
+
+### Would this app be suitable for younger family members?
+
+  
+
+1. Is the website suitable for all family members?
+
+2. Is it easy to navigate?
+
+3. What age is the app intended?
+
+  
+
+As a user, I would like to be able to edit my shopping bag.
+  
+## User Story 4
+
+### Would this app have a good range of items?
+
+  
+1. Is the app easy to navigate?
+
+2. Are there educational advantages to this app?
+
+
+As a user, I would like to share my experiences and opinions of items bought.
+ 
+
+As a first time user, I would expect
+
+•   A registration option.
+
+•   A login option.
+
+•   Good Graphics
+
+•   A good variety of items to buy.
+
+•   A search option
+  
+
+As a returning user, I would expect 
+
+
+•   A login option to create a user profile. 
+
+•   My profile page is to be private for my use.
+
+•   Updated content.
+
+  
+
+As a designer, I would expect
+
+  
+
+•   All buttons to be working
+
+•   All links to be active
+
+•   To be able to navigate through the site with ease
+
+•   To have a 404 page to return users to the home page.
+
+•   Striking colours to engage the user
+
+•   To be able to add or delete categories.
+
+*   To be able to add or delete products.
+  
 [Return to Table of Contents](#table-of-contents)

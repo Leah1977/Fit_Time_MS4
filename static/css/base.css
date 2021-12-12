@@ -151,10 +151,6 @@ input[name='q']::placeholder {
 
 /* -----------------------------------------------------Products Container */
 
-.products-container {
-    padding-top: 100px;
-}
-
 .text-muted {
     color: black;
     font-size: 1.5rem;
@@ -206,6 +202,7 @@ input[name='q']::placeholder {
 .reviews-wrapper {
     padding-bottom: 30px;
 }
+
 
 /* -----------------------------------------------------Contact Details */
 
@@ -325,6 +322,10 @@ input[name='q']::placeholder {
 
     .increment-qty, .decrement-qty {
         padding: .25rem .5rem !important;
+    }
+
+    .review {
+        padding-bottom: 214px;
     }
 }
 @media (max-width: 812px) {
