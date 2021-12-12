@@ -41,7 +41,6 @@ def add_review(request, product_id):
     context = {
         'form': form,
         'product': product,
-        'comment': comment,
     }
 
     return render(request, template, context)

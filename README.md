@@ -201,7 +201,7 @@ I used dbdiagrams to build a database schema for this project
 
 ### Click here for a link to the database schema [Fit Time Database Schema](media/readmeimages/databaseschema.png)
 
-![dbdiagrams](https://dbdiagram.io/home)
+![dbdiagrams](media/readmeimages/databaseschema.png)
 
 
 
