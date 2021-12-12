@@ -5,13 +5,8 @@ from .forms import ContactForm
 def contact(request):
     """ A view to return the contact page """
 
-    contactForm = ContactForm()
-    context = {
-        'contactForm': contactForm
-    }
-
     if request.method == 'POST':
-        form = contactForm(data=request.POST)
+        form = ContactForm(data=request.POST)
 
         if form.is_valid():
             name = request.POST.get('name', '')
@@ -20,7 +15,8 @@ def contact(request):
             message = request.POST.get('message', '')
             created_at = request.POST.get('created_at', '')
 
-            template = 'contact/contact.html'
+            
+            
             context = {
                 'name': name,
                 'title': title,
@@ -28,8 +24,15 @@ def contact(request):
                 'message': message,
                 'created_at': created_at,
             }
+    else:
+        contact_form = ContactForm()
+        context = {
+            'contact_form': contact_form
+        }
+    
+    template = 'contact/contact.html'
 
-    return render(request, 'contact/contact.html', context)
+    return render(request, template, context)
 
 
 def add_contact_message(request):
