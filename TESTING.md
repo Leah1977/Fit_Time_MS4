@@ -81,14 +81,22 @@ I have tested all links on all pages. All links work as intended. This allows th
 
 ## Debugging
 
+Shopping basket not opening
+
+Missing endfor tag in template
+Added in correct endfor tag.
+
 ## Favicon issue
 
-## Media files not loading
+Favicon not displaying.
+Since my last project, adding the favicon required a few different steps.
+Solved this error by going through the steps with 
+favicon generator.
 
 ## Add Review Error
 
 ## 500 Error
-
+## No Image not loading
 Had a lot of trouble with Internal Server issues
 
 ![]()

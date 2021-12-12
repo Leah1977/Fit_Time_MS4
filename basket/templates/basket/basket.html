@@ -35,101 +35,101 @@
                             </div>
                         </div>
                         {% for item in bag_items %}
-                        <div class="row">
-                            <div class="col-12 col-sm-6 mb-1">
-                                {% include "basket/product_image.html" %}
-                            </div>
-                            <div class="col-12 col-sm-6 mb-1">
-                                {% include "basket/product_info.html" %}
-                            </div>
-                            <div class="col-12 col-sm-last">
-                                <p class="my-0">
-                                    Price: €{{ item.product.price }}
-                                </p>
-                                <p class="my-0"><strong>Subtotal:</strong>
-                                    €{{ item.product.price | calc_subtotal:item.
-                                    quantity }}
-                                </p>
-                            </div>
-                            <div class="col-12 col-sm-6 mb-1">
-                                {% include "basket/quantity_form.html" %}
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col"><hr></div>
-                        </div>
-                    {% endfor %}
-                    <!-- button to return to top of page -->
-                    <div class="btt-button shadow-sm rounded-0 border 
-                    border-black">
-                        <a class="btt-link d-flex h-100">
-                            <i class="fas fa-arrow-up text-black mx-auto my-auto"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="table-responsive rounded d-none d-md-block">
-                    <table class="table table-sm table-border">
-                        <thead class="text-white">
-                            <tr>
-                                <th scope="col">Product Details</th>
-                                <th scope="col"></th>
-                                <th scope="col">Price</th>
-                                <th scope="col">Quantity</th>
-                                <th scope="col">Subtotal</th>
-                            </tr>
-                        </thead>
-                        {% for item in basket_items %}
-                            <tr>
-                                <td class="p-3 w-25">
-                                    <!-- Product Image -->
+                            <div class="row">
+                                <div class="col-12 col-sm-6 mb-1">
                                     {% include "basket/product_image.html" %}
-                                </td>
-                                <td class="py-3">
-                                    <!-- product information -->
+                                </div>
+                                <div class="col-12 col-sm-6 mb-1">
                                     {% include "basket/product_info.html" %}
-                                </td>
-                                <td class="py-3">
+                                </div>
+                                <div class="col-12 col-sm-last">
                                     <p class="my-0">
-                                        €{{ item.product.price }}
+                                        Price: €{{ item.product.price }}
                                     </p>
-                                </td>
-                                <td class="py-3 w-30">
-                                    <!-- quantity form -->
-                                    {% include "basket/quantity_form.html" %}
-                                </td>
-                                <td class="py-3">
-                                    <p class="my-0">
+                                    <p class="my-0"><strong>Subtotal:</strong>
                                         €{{ item.product.price | calc_subtotal:item.
                                         quantity }}
                                     </p>
+                                </div>
+                                <div class="col-12 col-sm-6 mb-1">
+                                    {% include "basket/quantity_form.html" %}
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col"><hr></div>
+                            </div>
+                        {% endfor %}
+                        <!-- button to return to top of page -->
+                        <div class="btt-button shadow-sm rounded-0 border 
+                        border-black">
+                            <a class="btt-link d-flex h-100">
+                                <i class="fas fa-arrow-up text-black mx-auto my-auto"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="table-responsive rounded d-none d-md-block">
+                        <table class="table table-sm table-border">
+                            <thead class="text-white">
+                                <tr>
+                                    <th scope="col">Product Details</th>
+                                    <th scope="col"></th>
+                                    <th scope="col">Price</th>
+                                    <th scope="col">Quantity</th>
+                                    <th scope="col">Subtotal</th>
+                                </tr>
+                            </thead>
+                            {% for item in basket_items %}
+                                <tr>
+                                    <td class="p-3 w-25">
+                                        <!-- Product Image -->
+                                        {% include "basket/product_image.html" %}
+                                    </td>
+                                    <td class="py-3">
+                                        <!-- product information -->
+                                        {% include "basket/product_info.html" %}
+                                    </td>
+                                    <td class="py-3">
+                                        <p class="my-0">
+                                            €{{ item.product.price }}
+                                        </p>
+                                    </td>
+                                    <td class="py-3 w-30">
+                                        <!-- quantity form -->
+                                        {% include "basket/quantity_form.html" %}
+                                    </td>
+                                    <td class="py-3">
+                                        <p class="my-0">
+                                            €{{ item.product.price | calc_subtotal:item.
+                                            quantity }}
+                                        </p>
+                                    </td>
+                                </tr>
+                            {% endfor %}
+                            <hr>
+                            <tr>
+                                <td colspan="5" class="pt-5 text-right">
+                                    <!-- basket total -->
+                                    {% include "basket/basket_total.html" %}
                                 </td>
                             </tr>
-                        {% endfor %}
-                        <hr>
-                        <tr>
-                            <td colspan="5" class="pt-5 text-right">
-                                <!-- basket total -->
-                                {% include "basket/basket_total.html" %}
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="5" class="text-right">
-                                <!-- product information -->
-                                {% include "basket/checkout_buttons.html" %}
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-            {% else %}
-                <p class = "lead mb-5">Nothing in this basket yet!!!</p>
-                <a href="{% url 'products' %}" class="btn btn-outline-black
-                rounded-0 btn-lg">
-                    <span class="icon">
-                        <i class="fas fa-chevron-left"></i>
-                    </span>
-                    <span class="text-uppercase">Continue Shopping</span>
-                </a>
-            {% endif %}
+                            <tr>
+                                <td colspan="5" class="text-right">
+                                    <!-- product information -->
+                                    {% include "basket/checkout_buttons.html" %}
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                {% else %}
+                    <p class = "lead mb-5">Nothing in this basket yet!!!</p>
+                    <a href="{% url 'products' %}" class="btn btn-outline-black
+                    rounded-0 btn-lg">
+                        <span class="icon">
+                            <i class="fas fa-chevron-left"></i>
+                        </span>
+                        <span class="text-uppercase">Continue Shopping</span>
+                    </a>
+                {% endif %}
             </div>
         </div>
     </div>
