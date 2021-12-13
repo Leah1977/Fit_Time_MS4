@@ -42,13 +42,14 @@ hr {
     font-size: 1rem;
     width: fit-content;
     padding: 5px;
+    color: black;
 }
 
 .logo-font:hover {
     text-transform: uppercase;
     font-family: 'Abril Fatface', sans-serif;
-    color: #091479d7;
-    font-size: 2rem;
+    color: royalblue;
+    background-color: #fafafa;
 }
 
 .logo-font:hover,
@@ -238,11 +239,16 @@ input[name='q']::placeholder {
 /* -----------------------------------------------------Contact Details */
 
 .contact-details {
-    
     color: black;
-    font-family: oswald;
+    font-family: 'Oswald', sans-serif;
     margin: auto;
     background: #92929f;
+}
+
+.contact-title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+    letter-spacing: 1.5px;
 }
 
 /* ---------------------------------------------------- Forms */
