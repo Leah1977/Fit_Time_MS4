@@ -29,19 +29,19 @@
 
 Tested on W3C CSS Validator
 [CSS Validation for https://fit-time-ms4.herokuapp.com/](https://jigsaw.w3.org/css-validator/validator)
+
 <p>
     <a href="http://jigsaw.w3.org/css-validator/check/referer">
         <img style="border:0;width:88px;height:31px"
             src="http://jigsaw.w3.org/css-validator/images/vcss"
             alt="Valid CSS!" />
     </a>
-</p>
-
+</p
 
 ## HTML Validator
 
 Pass code through HTML Validator
-[CSS Validation for https://family-favs-project.herokuapp.com/]
+[CSS Validation for https://fit-time-ms4.herokuapp.com/]
 
 [http://family-favs-project.herokuapp.com/get_recipes](https://validator.w3.org/nu/?doc=http%3A%2F%2Ffamily-favs-project.herokuapp.com%2Fget_recipes)
 [https://family-favs-project.herokuapp.com/register](https://validator.w3.org/nu/?doc=http%3A%2F%2Ffamily-favs-project.herokuapp.com%2Fregister)
@@ -171,6 +171,24 @@ Text was scrolling behind footer.  This meant the user couldn't see the buttons 
 out or submitting.
 
 Removed the fixed bottom option from the header and this resolved the issue.
+
+"""
+Error: Element li not allowed as child of element nav in this context. (Suppressing further errors from this subtree.)
+
+From line 115, column 1; to line 115, column 29
+
+eens -->↩↩<li class="list-inline-item">↩ 
+"""
+- Added <ul> to child element <li>
+
+
+
+Error: No space between attributes.
+
+At line 180, column 78
+
+="all-products"type="button" i
+
 
 ## User Story Testing
 
