@@ -43,11 +43,11 @@ Tested on W3C CSS Validator
 Pass code through HTML Validator
 [CSS Validation for https://fit-time-ms4.herokuapp.com/]
 
-[http://family-favs-project.herokuapp.com/get_recipes](https://validator.w3.org/nu/?doc=http%3A%2F%2Ffamily-favs-project.herokuapp.com%2Fget_recipes)
-[https://family-favs-project.herokuapp.com/register](https://validator.w3.org/nu/?doc=http%3A%2F%2Ffamily-favs-project.herokuapp.com%2Fregister)
-[https://family-favs-project.herokuapp.com/login](https://validator.w3.org/nu/?doc=http%3A%2F%2Ffamily-favs-project.herokuapp.com%2Flogin)
-[https://family-favs-project.herokuapp.com/create_recipe](https://validator.w3.org/nu/?doc=http%3A%2F%2Ffamily-favs-project.herokuapp.com%2Fcreate_recipe)
-[http://family-favs-project.herokuapp.com/get_categories](https://validator.w3.org/nu/?doc=http%3A%2F%2Ffamily-favs-project.herokuapp.com%2Fget_categories)
+[http://fit-time-ms4.herokuapp.com/](https://validator.w3.org/nu/?doc=https%3A%2F%2Ffit-time-ms4.herokuapp.com%2F)
+[https://fit-time-ms4.herokuapp.com/products](https://validator.w3.org/nu/?doc=https%3A%2F%2Ffit-time-ms4.herokuapp.com%2Fproducts%2F)
+[https://fit-time-ms4.herokuapp.com/](https://validator.w3.org/nu/?doc=http%3A%2F%2Ffamily-favs-project.herokuapp.com%2Flogin)
+[https://fit-time-ms4.herokuapp.com/](https://validator.w3.org/nu/?doc=http%3A%2F%2Ffamily-favs-project.herokuapp.com%2Fcreate_recipe)
+[http://fit-time-ms4.herokuapp.com/](https://validator.w3.org/nu/?doc=http%3A%2F%2Ffamily-favs-project.herokuapp.com%2Fget_categories)
 
 ## JS Validator
 
@@ -183,11 +183,28 @@ eens -->↩↩<li class="list-inline-item">↩
 
 
 
+"""
 Error: No space between attributes.
 
 At line 180, column 78
 
-="all-products"type="button" i
+="all-products"type="button"
+
+"""
+
+- add a space to correct this error.
+
+
+"""
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 322, column 13; to line 322, column 43
+
+          <script type="text/javascript">↩    
+"""
+
+- Removed the type="text/javascript" as no longer necessary.
+
 
 
 ## User Story Testing

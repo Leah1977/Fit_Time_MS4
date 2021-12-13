@@ -9,7 +9,8 @@ body {
     background-size: cover;
     height: calc(100vh - 164px);
     color: #fafafa;
-    font-family: 'Oswald', sans-serif; 
+    font-family: 'Oswald', sans-serif;
+    overflow-x: hidden; 
 }
 
 h4 {
@@ -34,8 +35,13 @@ hr {
 .logo-font {
     text-transform: uppercase;
     font-family: 'Abril Fatface', sans-serif;
-    color: #091479d7;
     font-size: 2rem;
+    border-radius: 15px;
+    background: royalblue;
+    text-align: center;
+    font-size: 1rem;
+    width: fit-content;
+    padding: 5px;
 }
 
 .logo-font:hover {
@@ -135,6 +141,10 @@ a.category-badge > span.badge:hover {
 
 .btt-link {
     cursor: pointer;
+}
+
+input[name='q']::placeholder {
+    color: #222;
 }
 
 /* ----------------------------------------------------- Message */
