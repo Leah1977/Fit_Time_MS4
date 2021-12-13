@@ -255,7 +255,10 @@ input[name='q']::placeholder {
 /* --------------------------------------------------------------- Footer */
 
 .footer-container {
-    padding-top: 10px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     background-color: black;
 }
 
