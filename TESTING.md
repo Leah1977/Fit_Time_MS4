@@ -28,7 +28,7 @@
 ## CSS Validator
 
 Tested on W3C CSS Validator
-[CSS Validation for https://family-favs-project.herokuapp.com/](https://jigsaw.w3.org/css-validator/validator)
+[CSS Validation for https://fit-time-ms4.herokuapp.com/](https://jigsaw.w3.org/css-validator/validator)
 <p>
     <a href="http://jigsaw.w3.org/css-validator/check/referer">
         <img style="border:0;width:88px;height:31px"

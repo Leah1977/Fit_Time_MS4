@@ -1,7 +1,7 @@
 # Milestone Project 4 - Fit Time
 
 ### Click here for a link to the live project on Heroku
-(Fit Time)[https://fit-time-ms4.herokuapp.com/]
+[Fit Time](https://fit-time-ms4.herokuapp.com/)
 
 An E-Commerce Data-Centric Development Project for Milestone 4.
   
@@ -50,11 +50,15 @@ It allows users to leave a review.  Logged in users can edit or delete their rev
 
 # Fit Time
 
-A data-centric e-commerce web application.  I created this app promote fitness.  Each user can register and log in to create a profile.  Users will be able to shop online for a range of items.  There will be an option to add, edit or delete items from a shopping bag.
+A data-centric e-commerce web application.  I created this app promote fitness.  
+Each user can register and log in to create a profile.  
+Users will be able to shop online for a range of items.  
+There will be an option to add, edit or delete items from a shopping bag.
 
 Users can also purchase products and classes.
 
-There is also an admin user.  The admin user will have the permission required to create a new category.
+There is also an admin user.  
+The admin user will have the permission required to create a new category.
   
 ### What value does it provide to its users.
 
@@ -114,6 +118,7 @@ Users can monitor how much they have spent in their shopping bag and click here 
 
 
 There is a footer on the home page.  Social links and a contact us option are included in the footer.  
+
 ![Footer](media/readmeimages/footer.png)
 
 ## Registration Form
@@ -123,6 +128,7 @@ There is a registration form where users can fill out their information to log i
 ![Registration Form](media/readmeimages/signup.png)
 
 Once users have registered they will be sent an email to confirm registration.
+
 ![Confirmed Email](media/readmeimages/confirmemail.png)
   
 ## Sign In Form.
@@ -137,6 +143,7 @@ This page will display the products available to purchase.  Users can scroll thr
 Users can also opt to narrow down the view to different sections.
 
 There is a search option for users to enter a particular item to search.
+
 ![All Products](media/readmeimages/products.png)
 
 ## Product Details
@@ -144,12 +151,14 @@ There is a search option for users to enter a particular item to search.
 Users can click on an image and view the product on it's own page.
 Here they can view a large image and some purchasing options.
 Users can select quantity etc and add to shopping bag.
+
 ![Product details](media/readmeimages/productdetail.png)
 
 ## Reviews
 
 Users can leave a review on an item and can also view other users reviews.
 Logged in users can edit/delete their own review.
+
 ![Reviews](media/readmeimages/review.png)
 
 ## Contact 
@@ -187,14 +196,14 @@ They can also view their order history.
 - There will be an option to save shipping details.
 - If the user is logged in - details will be filled.
 
-![Checkout Form]()
+![Checkout Form](media/readmeimages/shopping_basket.png)
 
 
 The payment will be processed using Stripe.
 - Card details can be entered safely and securely connected with Stripe.
 - While the payment details are being checked, an animated logo will show.
 
-![Credit Card Details]()
+![Credit Card Details](media/readmeimages/creditcard.png)
 
 ### Payment
 
@@ -202,7 +211,7 @@ The payment will be processed using Stripe.
 - If the payment is successful, users will be directed to the success page.
 - The order will be added to the users profile.
 
-![Payment Success]()
+![Payment Success](media/readmeimages/successorder.png)
 
 ## Django-allauth
 
@@ -216,6 +225,7 @@ The payment will be processed using Stripe.
 There will be four different toasts displaying to users - messages to provide feedback on thier actions.
 These will include messages for success, warnings, errors, and info.
 
+![Payment Success](media/readmeimages/toastsuccess.png)
 
 
 # UX
@@ -231,6 +241,7 @@ These will include messages for success, warnings, errors, and info.
 I used dbdiagrams to build a database schema for this project
 
 ### Click here for a link to the database schema [Fit Time Database Schema](media/readmeimages/databaseschema.png)
+
 
 ![dbdiagrams](media/readmeimages/databaseschema.png)
 
@@ -378,13 +389,14 @@ I created an excel page to view the user stories for testing.
 * Edit Categories function
 
 * Delete Categories function
- 
+
 
 * Create Products function
 
 * Edit Products function
 
 * Delete Products function
+
 
 ## Additional Features
 
