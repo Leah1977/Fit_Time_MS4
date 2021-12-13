@@ -38,6 +38,23 @@ hr {
     font-size: 2rem;
 }
 
+.logo-font:hover {
+    text-transform: uppercase;
+    font-family: 'Abril Fatface', sans-serif;
+    color: #091479d7;
+    font-size: 2rem;
+}
+
+.logo-font:hover,
+.logo-font:active,
+.logo-font:focus,
+.btn-black:hover,
+.btn-black:active,
+.btn-black:focus {
+    background: #222;
+    color: white; 
+}
+
 .main-logo-link {
     width: fit-content;
 }
