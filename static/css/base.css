@@ -323,11 +323,6 @@ input[name='q']::placeholder {
         padding-bottom: 10px;
     }
 
-    .logo-font {
-    font-size: 2rem;
-    padding-top: 2rem;
-    }
-
     .display-4.log-font.text-black {
         font-size: 2rem;
     }
