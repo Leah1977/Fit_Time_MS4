@@ -35,21 +35,13 @@ hr {
 .logo-font {
     text-transform: uppercase;
     font-family: 'Abril Fatface', sans-serif;
-    font-size: 2rem;
+    font-size: 1rem;
     border-radius: 15px;
-    background: royalblue;
     text-align: center;
     font-size: 1rem;
     width: fit-content;
     padding: 5px;
     color: black;
-}
-
-.logo-font:hover {
-    text-transform: uppercase;
-    font-family: 'Abril Fatface', sans-serif;
-    color: royalblue;
-    background-color: #fafafa;
 }
 
 .logo-font:hover,
