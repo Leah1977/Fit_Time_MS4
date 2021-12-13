@@ -57,6 +57,10 @@ hr {
 
 .main-logo-link {
     width: fit-content;
+    text-transform: uppercase;
+    font-family: 'Abril Fatface', sans-serif;
+    color: #091479d7;
+    box-shadow: 4px 8px #88888;
 }
 
 .border-black {
