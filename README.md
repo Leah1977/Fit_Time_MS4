@@ -1,10 +1,12 @@
 # Milestone Project 4 - Fit Time
 
 ### Click here for a link to the live project on Heroku
+(Fit Time)[https://fit-time-ms4.herokuapp.com/]
 
 An E-Commerce Data-Centric Development Project for Milestone 4.
   
-The project is a web application based on the creation of a sports app.  It allows users to Shop online, Sign up for classes and Create a Profile.
+The project is a web application based on the creation of a sports app.  It allows users to Shop online, purchase classes and Create a Profile.
+Users can also leave a review on a project and contact us through the contact page.
 
 
 ## Table of Contents.
@@ -31,11 +33,9 @@ The project is a web application based on the creation of a sports app.  It allo
 
 5. [Testing](#testing)
 
-6. [Debugging](#testing)
+6. [Deployment](#deployment)
 
-7. [Deployment](#deployment)
-
-8. [Acknowledgements](#acknowledgements)
+7. [Acknowledgements](#acknowledgements)
 
 
 ## Introduction
@@ -44,20 +44,15 @@ The project is a web application based on the creation of a sports app.  It allo
 
 ### This site was built using [GitHub Pages](https://pages.github.com/)/ and [Heroku](https://heroku.com)
 
-## Introduction
-
-## Welcome!
-
-### This site was built using [GitHub Pages](https://pages.github.com/)/ and [Heroku](https://heroku.com)
-
-I have created a mobile-first project.
+I have created a mobile-first project, that is fully responsive on all screen sizes.  
+It allows the shop owner to add, edit and delete items.
+It allows users to leave a review.  Logged in users can edit or delete their review.
 
 # Fit Time
 
-A data-centric e-commerce web application.  I created this app promote fitness.  Each user can register and log in to create a profile.  Users will be able to shop online for a range of items.  There will be an option to add, edit or delete
-items from a shopping bag.
+A data-centric e-commerce web application.  I created this app promote fitness.  Each user can register and log in to create a profile.  Users will be able to shop online for a range of items.  There will be an option to add, edit or delete items from a shopping bag.
 
-Users can also sign up for classes and purchase online sessions.
+Users can also purchase products and classes.
 
 There is also an admin user.  The admin user will have the permission required to create a new category.
   
@@ -65,13 +60,14 @@ There is also an admin user.  The admin user will have the permission required t
 
 This app allows users to shop online for a range of sports clothes and equipment.
 It allows users to sign up and create a personal profile page.
-Users can sign up and pay for online classes.
+Users can purchase online classes.
 
 ### What value does it provide to the site owner.
 
 This web application will provide the site owner with a valuable database of sports items to sell on-line.
 
-This app is aimed at anyone want to make time for themselves for overall health and fitness.
+This app is aimed at anyone that would like
+to make time for themselves for overall health and fitness.
 
 ### Here is a demonstrating of how my web app looks on different screen sizes using [Am I Responsive Website](http://ami.responsivedesign.is/)
 
@@ -107,32 +103,33 @@ The app will resize according to the different screen sizes.
 
 The home page is made up of a logo "Fit Time"
 
-There is a drop-down, select menu to the right, which expands to show a list of options.
+There is a drop-down, select menu to the right, which expands to show login/register option.
+When logged in users can also access their profile page here.
 
-![dropdown menu option](static/images/readme_images/dropdown_menu.png)
+![dropdown menu option](media/readmeimages/account_dropdown.png)
 
-There is a footer on the home page.  Social links and a sign up to our newsletter option are included in the footer.  
+There is also a link to the shopping bag in the header.
+Users can monitor how much they have spent in their shopping bag and click here to checkout.
+
+
+
+There is a footer on the home page.  Social links and a contact us option are included in the footer.  
+![Footer](media/readmeimages/footer.png)
 
 ## Registration Form
 
 There is a registration form where users can fill out their information to log in and create, read, update or delete.
 
-![Registration Form](static/images/readme_images/register_form.png)
+![Registration Form](media/readmeimages/signup.png)
 
+Once users have registered they will be sent an email to confirm registration.
+![Confirmed Email](media/readmeimages/confirmemail.png)
   
-## Log In Form.
+## Sign In Form.
 
-There will be a login form where registered users can fill in their user name and password to access further options to create, read, update or delete.  
+There will be a signin form where registered users can fill in their user name and password to access further options to create, read, update or delete.  
 
-![Log In Form](static/images/readme_images/login_form.png)
-
-## Sign up Form
-
-This page will allow the player to sign up for further information on updates for our web application.
-
-![Sign Up](static/images/readme_images/footer.png)
-
-The sign-up form is to register with our site to be notified of updates.
+![Sign In Form](media/readmeimages/signin.png)
 
 ## Products
 
@@ -140,17 +137,20 @@ This page will display the products available to purchase.  Users can scroll thr
 Users can also opt to narrow down the view to different sections.
 
 There is a search option for users to enter a particular item to search.
+![All Products](media/readmeimages/products.png)
 
 ## Product Details
 
 Users can click on an image and view the product on it's own page.
 Here they can view a large image and some purchasing options.
 Users can select quantity etc and add to shopping bag.
+![Product details](media/readmeimages/productdetail.png)
 
 ## Reviews
 
 Users can leave a review on an item and can also view other users reviews.
 Logged in users can edit/delete their own review.
+![Reviews](media/readmeimages/review.png)
 
 ## Contact 
 
@@ -158,6 +158,8 @@ Users can navigate to the contact page.  Here they can find details of our locat
 They can see our address and contact information.
 
 Users will also have the option to leave a message with the contact us form.
+
+
 
 ## Profiles
 
@@ -167,11 +169,40 @@ Users will be able to save information for future purchases.
 They will be able to edit or delete information as necessary.
 They can also view their order history.
 
+## Shopping Basket
+
+- Users will be able to add items to their basket.
+- They can view their basket by clicking on the basket icon at the top of the page.
+- Adjust the quantity.
+- Delete products.
+- View the grand total.
+
+![Basket View](media/readmeimages/basket.png)
+
 ## Checkout
 
-The checkout section will allow users to enter their shipping details and payment details.
+- The checkout section will allow users to enter their shipping details and payment details.
+- It will be possible to checkout as a guest.
+- The user can enter their shipping details.
+- There will be an option to save shipping details.
+- If the user is logged in - details will be filled.
+
+![Checkout Form]()
+
 
 The payment will be processed using Stripe.
+- Card details can be entered safely and securely connected with Stripe.
+- While the payment details are being checked, an animated logo will show.
+
+![Credit Card Details]()
+
+### Payment
+
+- If payment is unsuccessful, users will be directed back to the checkout.
+- If the payment is successful, users will be directed to the success page.
+- The order will be added to the users profile.
+
+![Payment Success]()
 
 ## Django-allauth
 
@@ -378,6 +409,7 @@ I created an excel page to view the user stories for testing.
 * Home page
 * Profile page
 * My Shopping Basket
+* Checkout
 * My Classes
 * Log out option
 
@@ -399,7 +431,10 @@ I created an excel page to view the user stories for testing.
 
 ![Color Scheme](media/readmeimages/colours.png)
 
-My primary colours will be blue, black and white.  I will use variations of these colours to add designs that stand out and appeal to the user.
+- My primary colours will be blue, black and white.  
+- I will use variations of these colours to add designs that stand out and appeal to the user.
+- I chose blue and variations, as to have a calming effect, as I want the user to feel they are focusing on themselves.
+
 
 I used [Coolers](http://www.coolers.co) to generate my colours for the project. I then used variations within the project.
 
@@ -497,9 +532,6 @@ In this project, I used the following to help build my website.
 
   
 
-Code used throughout this project was learned and implemented from the [Code Institute Diploma Programme](https://codeinstitue.net)
-  
-
 ### [Font Awesome](https://stackpath.bootstrapcdn.com/font-awesome/5.1.3.0/css/font-awesome.min.css) for its excellent choice of icons.
 
 ### [Google Fonts](https://fonts.googleapis.com/css2?)
@@ -558,7 +590,7 @@ Intermediate level
 
 Favicon
 
-Created with https://www.canva.com/ and favicon generator
+Created with [Canva](https://www.canva.com/) and [favicon generator](https://favicon.io/)
 
 ## Further References
 
@@ -670,14 +702,16 @@ This project was deployed to Heroku with the following steps:
 
 3. In the top right corner of the page, click "Fork".
 
-### Acknowledgements
+### Credit and Acknowledgements
 
-  
+Code used throughout this project was learned and implemented from the [Code Institute Diploma Programme](https://codeinstitue.net)
+My project was based along the Boutique Ado Project and adapted to suit my project development.
+
 Much thanks to my mentor Nishant Kumar for giving great support and encouragement throughout my fourth Milestone Project.
 
 Much thanks to Code Institute Tutors for pointing me in the right direction when I was going off course.
 Once again, the support from the tutors was always excellent and their patience with me was much appreciated. 
-Thanks so much Igor and all the tutors over the year.  
+Thanks so much Igor, Ed, Jo and all the tutors over the year.  
 
 
 Thanks also to the support from the Slack Community.  I only got used to using this resource towards the end, when I realised
