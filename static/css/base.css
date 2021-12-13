@@ -264,6 +264,7 @@ input[name='q']::placeholder {
     bottom: 0;
     width: 100%;
     background-color: black;
+    color: #fafafa;
 }
 
 /* ----------------------------------------------- Allauth form formatting */
