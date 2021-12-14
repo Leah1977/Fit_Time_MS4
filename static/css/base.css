@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Oswald:wght@200;300;600&display=swap');
 
+* {
+    box-sizing: border-box;
+
+}
+
 html {
     height: 100%;
 }
@@ -259,8 +264,7 @@ input[name='q']::placeholder {
 /* --------------------------------------------------------------- Footer */
 
 .footer-details {
-    position: relative;
-    display: flex;
+    position: sticky;
     left: 0;
     bottom: 0;
     width: 100%;
