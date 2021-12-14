@@ -151,6 +151,7 @@ input[name='q']::placeholder {
     background: black;
     color: white;
     font-family:'Abril Fatface', sans-serif;
+    width: 100%;
 }
 
 .banner-info {
@@ -322,6 +323,10 @@ input[name='q']::placeholder {
         padding-bottom: 100px;
     }
 
+    .nav-item {
+        background-color: white;
+    }
+
     .display-4.logo-font.text-black {
         font-size: 2rem;
     }
@@ -394,7 +399,7 @@ input[name='q']::placeholder {
         font-size: 1rem;
     }
 
-    #delivery-banner h4 {
+    #shipping-banner h4 {
         font-size: 2rem;
     }
 

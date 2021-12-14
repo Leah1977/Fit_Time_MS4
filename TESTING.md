@@ -44,9 +44,8 @@ Pass code through HTML Validator
 
 [http://fit-time-ms4.herokuapp.com/](https://validator.w3.org/nu/?doc=https%3A%2F%2Ffit-time-ms4.herokuapp.com%2F)
 [https://fit-time-ms4.herokuapp.com/products](https://validator.w3.org/nu/?doc=https%3A%2F%2Ffit-time-ms4.herokuapp.com%2Fproducts%2F)
-[https://fit-time-ms4.herokuapp.com/reviews](https://validator.w3.org/nu/?doc=http%3A%2F%2Ffamily-favs-project.herokuapp.com%2Flogin)
-[https://fit-time-ms4.herokuapp.com/contact](https://validator.w3.org/nu/?doc=http%3A%2F%2Ffamily-favs-project.herokuapp.com%2Fcreate_recipe)
-[http://fit-time-ms4.herokuapp.com/](https://validator.w3.org/nu/?doc=http%3A%2F%2Ffamily-favs-project.herokuapp.com%2Fget_categories)
+[https://fit-time-ms4.herokuapp.com/reviews/add_review/6](https://validator.w3.org/nu/?doc=https%3A%2F%2Ffit-time-ms4.herokuapp.com%2Freviews%2Fadd_review%2F6)
+[https://fit-time-ms4.herokuapp.com/reviews/profile](https://validator.w3.org/nu/?doc=https%3A%2F%2Ffit-time-ms4.herokuapp.com%2Fprofile%2F)
 
 ## JS Validator
 
