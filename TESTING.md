@@ -10,7 +10,6 @@
 6.  [Mobile](#mobile-testing)
 7.  [Project Testing](#deployed-testing)
     - [Links](#links)
-    - [Overlay](#overlay)
     - [Sign-up Form](#form)
 8.  [User Stories](#user-stories)
     - [User Story 1](#user-story-1)
@@ -83,7 +82,7 @@ The rest of the site followed the wireframes with no major changes.
 
 Tested the site using Lighthouse 
 
-![Lighthhouse Review](static/images/testing_images/lighthousereport.png)
+![Lighthhouse Review](media/testingimages/lighthouse.png)
 
 ## Mobile
 
@@ -91,7 +90,7 @@ Tested the site for mobile-friendly usage
 
 [https://search.google.com/test/mobile-friendly](https://search.google.com/test/mobile-friendly/result?id=T_OzLyWJs5QK3IbkIhl4gA)
 
-![Mobile friendly approved](static/images/testing_images/mobilefriendly.png)
+![Mobile friendly approved](media/testingimages/mobilefriendly.png)
 
 ## Project Testing
 
@@ -131,6 +130,11 @@ And including the following tags
 
 ## Add Review Error
 
+![Add Review Error](media/testingimages/add_review_error.png)
+
+Here I had an error with the url for adding a product. I had called this incorrectly in the 
+add review url.  Once I changed this, it worked as expected.
+
 ## 500 Error
 ## No Image not loading
 Had a lot of trouble with Internal Server issues
@@ -143,10 +147,13 @@ I was getting an issue telling me that my products didn't exist.
 
 I thought this was an error due to my database, but with help from tutor support, 
 I realised I had renamed the images and they no longer matched the database.
-![Renamed images in media folder](media/testingimages/Screenshot 2021-12-07 132726.png)
+![RenamedImagesInMediaFolder](media/testingimages/Screenshot 2021-12-07 132726.png)
 
 I fixed this error and made sure the image names match with my Amazon S3 media file so that they could be called correctly.
 ![AmazonS3](media/testingimages/Screenshot 2021-12-07 132812.png)
+
+Also checked that the images could be accessed.
+![BugFixForImages](media/testingimages/bug fix.png)
 
 I updated the media folders through Admin
 ![DjangoAdmin](media/testingimages/Screenshot 2021-12-07 134912.png)
@@ -156,16 +163,6 @@ Once they were the same, the images could now display correctly
 
 Product Images displaying correctly
 ![ProductImages](media/testingimages/ProductImages.png)
-
-
-
-## Contact page error
-
-## Nutrition Icon missing
-
-
-
-## No Image not loading
 
 
 ## Line length too long
@@ -270,14 +267,13 @@ There is a description for the products to tell the customer about them.
 
 ## User Story 2
 
+### Sign-up Form
+
   As a website user, I want the app to be easy to use.  I would expect to be able to register and for my details to be secure and safe.
 
-  Users can register with the site, by filling out their information on the sign up form.
+  Users can register with the site, by filling out their information on the Sign-up form.
 
-  ![Sign UP](media/testingimages/signup.png)
-
-
-
+  ![Sign-up](media/testingimages/signup.png)
 
 
 ### What do I expect to find on a web application?
@@ -338,6 +334,8 @@ As a user, I would like to share my experiences and opinions of items bought.
 
 Users can leave reviews on items they have purchased.
 
+![Reviews](media/testingimages/Add a review.png)
+
 As a first time user, I would expect
 
 •   A registration option.
@@ -396,6 +394,7 @@ The site is easy to navigate with a range of buttons and links.
 
 
 •   To have a 404 page to return users to the home page.
+![404Error]()
 
 Users can return to the home page if they get an error page.
 
@@ -417,7 +416,7 @@ Products can be added by site owner.
 
 Products can only be added by the site owner, in the management only log in.
 
-![Add a Product]()
+![Add a Product](media/testingimages/addproduct.png)
 
 ## End of Testing Section
   
