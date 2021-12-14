@@ -265,20 +265,36 @@ before they checkout.
 
 6. I would like the site to be informative.
 
+There is a description for the products to tell the customer about them.
+
 
 ## User Story 2
 
   As a website user, I want the app to be easy to use.  I would expect to be able to register and for my details to be secure and safe.
 
+  Users can register with the site, by filling out their information on the sign up form.
+
+  ![Sign UP](media/testingimages/signup.png)
+
+
+
+
+
 ### What do I expect to find on a web application?
 
   
 
-1. Can I view my shopping bag?
+1. Can I view my shopping basket?
 
-2. Can I edit my shopping bag?
+Users can view their shopping bag, by clicking on the shopping basket icon at the top of the site.
 
-3. Can I delete items from my shopping bag?
+2. Can I edit my shopping basket?
+
+Users can edit their shopping basket, when the choose the check out option.
+
+3. Can I delete items from my shopping basket?
+
+Users can delete items from their basket before they checkout.
 
   
 
@@ -290,9 +306,15 @@ before they checkout.
 
 1. Is the website suitable for all family members?
 
+This website is aimed at anyone interested in taking time for themselves, to purchase sports related items.
+
 2. Is it easy to navigate?
 
+This site is easy to navigate with a range of buttons and links.
+
 3. What age is the app intended?
+
+This app is aimed at adults.
 
   
 
@@ -305,34 +327,55 @@ As a user, I would like to be able to edit my shopping bag.
   
 1. Is the app easy to navigate?
 
+This app is easy to navigate through links and buttons.
+
 2. Are there educational advantages to this app?
 
+This site is aimed mostly at fitness, it could be educational by adding some tips and
+nutritional information on the nutrition section.
 
 As a user, I would like to share my experiences and opinions of items bought.
- 
+
+Users can leave reviews on items they have purchased.
 
 As a first time user, I would expect
 
 •   A registration option.
 
+Users can register on first time access to this site.
+
 •   A login option.
+
+If users are registered, there will be a login option.
 
 •   Good Graphics
 
+This site is kept simple in terms of graphics, so as not to have the 
+site busy, for a calm straighforward shopping experience.
+
 •   A good variety of items to buy.
+
+This site would like to add a variety of products, classes and nutritional information.
 
 •   A search option
   
+There is a search option at the top of the site for users to look up items they would 
+like to purchase.
 
 As a returning user, I would expect 
 
 
 •   A login option to create a user profile. 
 
+Users can save their information and previous purchase can be viewed on a profile page.
+
 •   My profile page is to be private for my use.
+
+You will have to log in to view your profile page, as it will be personal to each user.
 
 •   Updated content.
 
+Content will be updated regularly, as the products for sale will change with styles and seasons.
   
 
 As a designer, I would expect
@@ -341,17 +384,40 @@ As a designer, I would expect
 
 •   All buttons to be working
 
+All buttons are working as intended.
+
 •   All links to be active
+
+All links are working as intended.
 
 •   To be able to navigate through the site with ease
 
+The site is easy to navigate with a range of buttons and links.
+
+
 •   To have a 404 page to return users to the home page.
+
+Users can return to the home page if they get an error page.
+
 
 •   Striking colours to engage the user
 
+Colours are mainly blue, black and white. This is to keep the site from looking too busy, 
+and to have a clean style to it.
+
 •   To be able to add or delete categories.
 
+Only site owners will have the option to add and delete categories through the admin.
+
 *   To be able to add or delete products.
+
+Only site owners will have the option to add and delete categories through the admin.
+
+Products can be added by site owner.
+
+Products can only be added by the site owner, in the management only log in.
+
+![Add a Product]()
 
 ## End of Testing Section
   
