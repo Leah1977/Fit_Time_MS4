@@ -50,7 +50,7 @@ hr {
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: #222;
+    background: rgba(37, 63, 146, 0.034);
     color: white; 
 }
 
@@ -260,6 +260,8 @@ input[name='q']::placeholder {
 .
 
 .footer-details {
+    position: relative;
+    display: flex;
     left: 0;
     bottom: 0;
     width: 100%;
