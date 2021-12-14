@@ -264,7 +264,7 @@ input[name='q']::placeholder {
 /* --------------------------------------------------------------- Footer */
 
 .footer-details {
-    position: absolute;
+    position: sticky;
     left: 0;
     bottom: 0;
     width: 100%;
