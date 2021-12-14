@@ -39,7 +39,6 @@ hr {
     font-size: 1rem;
     border-radius: 15px;
     text-align: center;
-    font-size: 1rem;
     padding: 5px;
     color: black;
 }
@@ -312,7 +311,11 @@ input[name='q']::placeholder {
     }
 
     .header-container {
-        padding-top: 146px;
+        padding-top: 116px;
+    }
+
+    body {
+        height: calc(100vh - 116px);
     }
 
     .footer-container {
@@ -374,11 +377,6 @@ input[name='q']::placeholder {
         height: calc(100vh - 116px);
     }
 
-    .display-4.main-message-font.text-white {
-        font-size: 5rem;
-        font-family: 'Abril Fatface', sans-serif;
-    }
-
     .main-message {
         padding-top: 24px;
     }
@@ -435,6 +433,14 @@ input[name='q']::placeholder {
         min-width: 140px;
         letter-spacing: 1.5px;
         border-radius: 10px;
+    }
+
+    .logo-font {
+        font-size: .75rem;
+    }
+    
+    .icon-label {
+        font-size: small;
     }
 
 }

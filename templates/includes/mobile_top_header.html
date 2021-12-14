@@ -4,7 +4,7 @@
         <a href="#" class="text-black nav-link d-block d-lg-none" id="mobile-search" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <div class="text-center">
                 <div><i class="fas fa-search fa-lg"></i></div>
-                <p class="my-0">Search</p>
+                <p class="my-0 icon-label">Search</p>
             </div>
         </a>
         <!-- dropdown for search menu -->
@@ -50,7 +50,7 @@
         <a href="{% url 'view_basket' %}" class="{% if grand_total %} text-black font-weight-bold{% else %} text-black{% endif %} nav-link d-block d-lg-none">
             <div class="text-center">
                 <div><i class="fas fa-shopping-bag fa-lg"></i></div>
-                <p class="my-0">
+                <p class="my-0 icon-label">
                     {% if grand_total %}
                         €{{ grand_total|floatformat:2 }}
                     {% else %}
@@ -64,7 +64,7 @@
         <a href="{% url 'home' %}" class="text-black nav-link d-block d-lg-none">
             <div class="text-center">
                 <div><i class="fas fa-home fa-lg"></i></div>
-                <p class="my-0">Home</p>
+                <p class="my-0 icon-label">Home</p>
             </div>
         </a>
     </li>

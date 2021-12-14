@@ -2,20 +2,11 @@
 {% load static %}
 {% load basket_tools %}
 
-{% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
-    </div>
-{% endblock %}
-
 {% block content %}
     <div class="overlay"></div>
     <div class="container mb-2">
         <div class="row">
             <div class="col">
-                <hr>
                 <h3 class = "logo-font mb-4 text-center">Checkout</h3>
                 <hr>
             </div>
@@ -104,7 +95,6 @@
                                     </td>
                                 </tr>
                             {% endfor %}
-                            <hr>
                             <tr>
                                 <td colspan="5" class="pt-5 text-right">
                                     <!-- basket total -->

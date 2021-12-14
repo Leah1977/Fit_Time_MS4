@@ -57,6 +57,28 @@ Tested the site with jshint.com validator.
 
 Comparing the deployed version against the development version(wireframes)
 
+For the home page on mobile/small screens - I added a home icon button, as the logo icon would not be displaying.
+I added this to the icons at the top right hand corner of the page.
+
+![Home Icon](media/testingimages/homeicon.png)
+
+Changed the Join now button to a shop now button to bring you straight to the products page.
+
+![Shop Now](media/testingimages/shop now button.png)
+
+Added a footer to the site. To allow users to access our social links.  
+Also added a link to the contact page here.
+
+![Footer](media/testingimages/footer.png)
+
+On the Product Item page, I added a section for reviews.
+This would allow users to add a review for the product they are viewing.
+
+![Review](media/testingimages/Add a review.png)
+
+The rest of the site followed the wireframes with no major changes.
+
+
 ## Lighthouse
 
 Tested the site using Lighthouse 
@@ -67,7 +89,7 @@ Tested the site using Lighthouse
 
 Tested the site for mobile-friendly usage
 
-[https://search.google.com/test/mobile-friendly](https://search.google.com/test/mobile-friendly?id=10B7YLqttRT7af4Ml0gyCA)
+[https://search.google.com/test/mobile-friendly](https://search.google.com/test/mobile-friendly/result?id=T_OzLyWJs5QK3IbkIhl4gA)
 
 ![Mobile friendly approved](static/images/testing_images/mobilefriendly.png)
 
@@ -113,11 +135,10 @@ And including the following tags
 ## No Image not loading
 Had a lot of trouble with Internal Server issues
 
-![]()
 ![Error 500](media/testingimages/error_500.png)
 
 
-I was getting an issue telling me that my products didnt' exist.
+I was getting an issue telling me that my products didn't exist.
 ![Products Issue](media/testingimages/Screenshot 2021-12-07 104951.png)
 
 I thought this was an error due to my database, but with help from tutor support, 
@@ -142,7 +163,7 @@ Product Images displaying correctly
 
 ## Nutrition Icon missing
 
-## End of Testing Section
+
 
 ## No Image not loading
 
@@ -209,6 +230,8 @@ From line 322, column 13; to line 322, column 43
 
 ## User Story Testing
 
+![UserStories in excell form](media/testingimages/userstories.png)
+
 ## User Story 1
 
   
@@ -216,11 +239,29 @@ From line 322, column 13; to line 322, column 43
 
 1. I expect to be able to navigate around the app with ease.
 
+
+Tested that all buttons were working and brought the user to the relevent pages.
+
+
 2. I expect to be able to search for items to buy.
+
+Created a search bar option.
+This is set at the top of the site.
+
+![Search Bar](media/testingimages/searchbar.png)
+
+Allowing users to search for items on the site.
 
 3. I would expect the app to be visually appealing.
 
-5. I would like to be able to edit my shopping bag.
+I used mainly a blue theme, with some black and white throughout the site.
+
+5. I would like to be able to edit my shopping basket.
+
+Users will have the option to edit or remove items from their shopping basket
+before they checkout.
+
+![Edit shopping basket](media/testingimages/edit_basket.png)
 
 6. I would like the site to be informative.
 
@@ -311,5 +352,7 @@ As a designer, I would expect
 •   To be able to add or delete categories.
 
 *   To be able to add or delete products.
+
+## End of Testing Section
   
 [Return to Table of Contents](#table-of-contents)
