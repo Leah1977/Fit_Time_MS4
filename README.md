@@ -44,13 +44,13 @@ Users can also leave a review on a project and contact us through the contact pa
 
 ### This site was built using [GitHub Pages](https://pages.github.com/)/ and [Heroku](https://heroku.com)
 
-I have created a mobile-first project, that is fully responsive on all screen sizes.  
+I have created a mobile-first project that is fully responsive on all screen sizes.  
 It allows the shop owner to add, edit and delete items.
-It allows users to leave a review.  Logged in users can edit or delete their review.
+It allows users to leave a review.  Logged in, users can edit or delete their reviews.
 
 # Fit Time
 
-A data-centric e-commerce web application.  I created this app promote fitness.  
+A data-centric e-commerce web application.  I created this app to promote fitness.  
 Each user can register and log in to create a profile.  
 Users will be able to shop online for a range of items.  
 There will be an option to add, edit or delete items from a shopping bag.
@@ -68,7 +68,7 @@ Users can purchase online classes.
 
 ### What value does it provide to the site owner.
 
-This web application will provide the site owner with a valuable database of sports items to sell on-line.
+This web application will provide the site owner with a valuable database of sports items to sell online.
 
 This app is aimed at anyone that would like
 to make time for themselves for overall health and fitness.
@@ -105,10 +105,10 @@ The app will resize according to the different screen sizes.
 
 ## Home page
 
-The home page is made up of a logo "Fit Time"
+The home page is made up of a logo, "Fit Time."
 
-There is a drop-down, select menu to the right, which expands to show login/register option.
-When logged in users can also access their profile page here.
+There is a drop-down, select menu to the right, which expands to show the login/register option.
+When logged in, users can also access their profile page here.
 
 ![dropdown menu option](media/readmeimages/account_dropdown.png)
 
@@ -127,13 +127,13 @@ There is a registration form where users can fill out their information to log i
 
 ![Registration Form](media/readmeimages/signup.png)
 
-Once users have registered they will be sent an email to confirm registration.
+Once users have registered, they will be sent an email to confirm registration.
 
 ![Confirmed Email](media/readmeimages/confirmemail.png)
   
 ## Sign In Form.
 
-There will be a signin form where registered users can fill in their user name and password to access further options to create, read, update or delete.  
+There will be a sign-in form where registered users can fill in their user name and password to access further options to create, read, update or delete.  
 
 ![Sign In Form](media/readmeimages/signin.png)
 
@@ -148,16 +148,16 @@ There is a search option for users to enter a particular item to search.
 
 ## Product Details
 
-Users can click on an image and view the product on it's own page.
+Users can click on an image and view the product on its own page.
 Here they can view a large image and some purchasing options.
-Users can select quantity etc and add to shopping bag.
+Users can select quantity etc., and add to shopping bag.
 
 ![Product details](media/readmeimages/productdetail.png)
 
 ## Reviews
 
 Users can leave a review on an item and can also view other users reviews.
-Logged in users can edit/delete their own review.
+Logged in, users can edit/delete their own review.
 
 ![Reviews](media/readmeimages/review.png)
 
@@ -166,7 +166,7 @@ Logged in users can edit/delete their own review.
 Users can navigate to the contact page.  Here they can find details of our location with Google maps.
 They can see our address and contact information.
 
-Users will also have the option to leave a message with the contact us form.
+Users will also have the option to leave a message with the contact us Form.
 
 
 
@@ -175,12 +175,12 @@ Users will also have the option to leave a message with the contact us form.
 Users can create a profile page.
 
 Users will be able to save information for future purchases.
-They will be able to edit or delete information as necessary.
+They will be able to edit or delete the information as necessary.
 They can also view their order history.
 
 ## Shopping Basket
 
-- Users will be able to add items to their basket.
+- Users will be able to add items to their baskets.
 - They can view their basket by clicking on the basket icon at the top of the page.
 - Adjust the quantity.
 - Delete products.
@@ -209,7 +209,7 @@ The payment will be processed using Stripe.
 
 - If payment is unsuccessful, users will be directed back to the checkout.
 - If the payment is successful, users will be directed to the success page.
-- The order will be added to the users profile.
+- The order will be added to the user's profile.
 
 ![Payment Success](media/readmeimages/successorder.png)
 
@@ -217,12 +217,12 @@ The payment will be processed using Stripe.
 
 - Python package django-allauth will be used.
 - This built-in application is used for user registration and authentication.
-- It allows us to inclucde signup, passwords, login and logout features.
+- It allows us to include signup, passwords, login and logout features.
 
 
 ## Toasts 
 
-There will be four different toasts displaying to users - messages to provide feedback on thier actions.
+There will be four different toasts displaying to users - messages to provide feedback on their actions.
 These will include messages for success, warnings, errors, and info.
 
 ![Payment Success](media/readmeimages/toastsuccess.png)
@@ -238,7 +238,7 @@ These will include messages for success, warnings, errors, and info.
 
 ## Database Schema
 
-I used dbdiagrams to build a database schema for this project
+I used dbdiagrams to build a database schema for this project.
 
 ### Click here for a link to the database schema [Fit Time Database Schema](media/readmeimages/databaseschema.png)
 
@@ -250,7 +250,7 @@ I used dbdiagrams to build a database schema for this project
 ## Project Goals.
 
   
-### This project provides a back-end user-centric web application.  It is intended to provide a space where the user can purchase sports apparell, sign up for classes and get nutritional information.
+### This project provides a back-end user-centric web application.  It is intended to provide a space where the user can purchase sports apparel, sign up for classes and get nutritional information.
 
 
 * To allow the user to shop securely online.
@@ -261,7 +261,7 @@ I used dbdiagrams to build a database schema for this project
 
 ## Strategy
 
-### This website is for users shop online.
+### This website is for users who shop online.
 
 * I want to provide an application for users to shop securely online.
 
@@ -406,7 +406,7 @@ I created an excel page to view the user stories for testing.
 
 * I would like to add a blog section for users to add tried and tested products from the website.
 
-#### This project will include 7 separate pages to be available to all users.
+#### This project will include seven separate pages to be available to all users.
 
 * Home page
 * Products page
@@ -445,7 +445,7 @@ I created an excel page to view the user stories for testing.
 
 - My primary colours will be blue, black and white.  
 - I will use variations of these colours to add designs that stand out and appeal to the user.
-- I chose blue and variations, as to have a calming effect, as I want the user to feel they are focusing on themselves.
+- I chose blue and variations to have a calming effect, as I want the user to feel they are focusing on themselves.
 
 
 I used [Coolers](http://www.coolers.co) to generate my colours for the project. I then used variations within the project.
@@ -514,7 +514,7 @@ In this project, I used the following to help build my website.
 
 * [hover.css](https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css).
 
-* [Bootstrap](https://getbootstrap.com/) - A web framework that helps build fast and responsive sites, with responsive mobile-first tools.
+* [Bootstrap](https://getbootstrap.com/) - A web framework that helps build fast and responsive sites with responsive mobile-first tools.
 
 * [JQuery](https://jquery.com/) - javascript library.
 
@@ -574,7 +574,7 @@ Photo by <a href="https://unsplash.com/@jakobowens1?utm_source=unsplash&utm_medi
   
 
 Smoothie
-Glass of Berry Milk Shake, Closeup
+A glass of Berry Milk Shake, Closeup
 Photo • 5760 × 3840 px
 
 By Olga Yastremska's Images
@@ -653,7 +653,7 @@ This project was deployed to Heroku with the following steps:
 
 10. Go to the app settings on Heroku and click 'Reveal Config Vars'
 
-11. In the resources tab add Heroku Postgres - select Hobby Dev - Free and add to your project.
+11. In the resources tab, add Heroku Postgres - select Hobby Dev - Free and add to your project.
 
 12.  In the settings tab, open Reveal Config Vars and set the values to:
 
@@ -670,7 +670,7 @@ This project was deployed to Heroku with the following steps:
 | STRIPE_WH_SECRET        | Your Stripe WH Key        |
 | USE_AWS                 | True                      |
 
-[Django Secret Key](https://miniwebtool.com/django-secret-key-generator/) was used to create secret key.
+[Django Secret Key](https://miniwebtool.com/django-secret-key-generator/) was used to create a secret key.
 
 13. Migrate the databases to the Postgres database using the following commands
 
@@ -683,7 +683,7 @@ This project was deployed to Heroku with the following steps:
 
 - heroku run python manage.py createsuperuser
 
-15. Add Heroku app URL in stripe as a new webhook endpoint.
+15. Add Heroku app URL in Stripe as a new webhook endpoint.
 
 12. Go to the app Overview page and when the build is finished, click 'Open App.'
 
@@ -702,7 +702,7 @@ This project was deployed to Heroku with the following steps:
 
 5. Navigate to the Project GitHub repository.
 
-6. Under the Repository Fit_Time_MS4, navigate to the code dropdown menu and Clone.
+6. Under the Repository Fit_Time_MS4, navigate to the code drop-down menu and Clone.
 
 7. This will trigger a new gitpod workspace that you can work on.
 
@@ -717,13 +717,13 @@ This project was deployed to Heroku with the following steps:
 ### Credit and Acknowledgements
 
 Code used throughout this project was learned and implemented from the [Code Institute Diploma Programme](https://codeinstitue.net)
-My project was based along the Boutique Ado Project and adapted to suit my project development.
+My project was based along with the Boutique Ado Project and adapted to suit my project development.
 
 Much thanks to my mentor Nishant Kumar for giving great support and encouragement throughout my fourth Milestone Project.
 
 Much thanks to Code Institute Tutors for pointing me in the right direction when I was going off course.
-Once again, the support from the tutors was always excellent and their patience with me was much appreciated. 
-Thanks so much Igor, Ed, Jo and all the tutors over the year.  
+Once again, the support from the tutors was always excellent, and their patience with me was much appreciated. 
+Thanks so much, Igor, Ed, Jo and all the tutors over the year.  
 
 
 Thanks also to the support from the Slack Community.  I only got used to using this resource towards the end, when I realised
@@ -737,8 +737,8 @@ This project is for educational purposes only.
 
 # Notes
 
-During the development of this project.  Gitpod did an update - this in turn added many preinstalled dependencies.
-To counteract this I was advised by tutor support to run the following commands when I restart my workspace. 
+During the development of this project.  Gitpod did an update - this, in turn, added many preinstalled dependencies.
+To counteract this, I was advised by tutor support to run the following commands when I restart my workspace. 
 1. run pip3 uninstall -y -r deps.txt
 2. run pip3 install -r requirements.txt
 
